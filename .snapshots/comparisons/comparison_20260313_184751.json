@@ -1,0 +1,19 @@
+{
+  "snapshot1": "test-basic",
+  "snapshot2": "test-compare",
+  "timestamp": "2026-03-13T18:47:51.680509",
+  "files_added": [
+    "test_file.txt"
+  ],
+  "files_modified": [],
+  "files_deleted": [],
+  "dependencies_added": {},
+  "dependencies_removed": {},
+  "dependencies_updated": {},
+  "processes_started": [],
+  "processes_stopped": [],
+  "memory_change_mb": 104058880,
+  "disk_change_mb": 0.0,
+  "risk_level": "low",
+  "recommendations": []
+}

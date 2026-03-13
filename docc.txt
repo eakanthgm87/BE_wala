@@ -1,0 +1,10 @@
+ai: snapshot features
+ai: snapshot create <name> [commit_message]: Create with custom commit message
+ai: snapshot list: Shows enhanced details
+ai: snapshot restore <name>: Restore functionality preserved
+ai: snapshot undo: Quick undo preserved
+ai: snapshot recover: Recovery preserved
+All other commands work exactly as before
+
+
+

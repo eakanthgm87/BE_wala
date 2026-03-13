@@ -1,0 +1,3162 @@
+('Y:\\Hackathan\\shellmind-ai-terminal\\build\\main\\PYZ-00.pyz',
+ [('__future__',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\__future__.py',
+   'PYMODULE'),
+  ('_aix_support',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\_aix_support.py',
+   'PYMODULE'),
+  ('_bootsubprocess',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\_bootsubprocess.py',
+   'PYMODULE'),
+  ('_compat_pickle',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\_compat_pickle.py',
+   'PYMODULE'),
+  ('_compression',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\_compression.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\_py_abc.py',
+   'PYMODULE'),
+  ('_pydecimal',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\_pydecimal.py',
+   'PYMODULE'),
+  ('_strptime',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\_strptime.py',
+   'PYMODULE'),
+  ('_threading_local',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\_threading_local.py',
+   'PYMODULE'),
+  ('ai', 'Y:\\Hackathan\\shellmind-ai-terminal\\ai\\__init__.py', 'PYMODULE'),
+  ('ai.ai_engine',
+   'Y:\\Hackathan\\shellmind-ai-terminal\\ai\\ai_engine.py',
+   'PYMODULE'),
+  ('ai.ollama_client',
+   'Y:\\Hackathan\\shellmind-ai-terminal\\ai\\ollama_client.py',
+   'PYMODULE'),
+  ('ai.prompts',
+   'Y:\\Hackathan\\shellmind-ai-terminal\\ai\\prompts.py',
+   'PYMODULE'),
+  ('argparse',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\argparse.py',
+   'PYMODULE'),
+  ('ast',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py',
+   'PYMODULE'),
+  ('asyncio',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\__init__.py',
+   'PYMODULE'),
+  ('asyncio.base_events',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\base_events.py',
+   'PYMODULE'),
+  ('asyncio.base_futures',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\base_futures.py',
+   'PYMODULE'),
+  ('asyncio.base_subprocess',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\base_subprocess.py',
+   'PYMODULE'),
+  ('asyncio.base_tasks',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\base_tasks.py',
+   'PYMODULE'),
+  ('asyncio.constants',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\constants.py',
+   'PYMODULE'),
+  ('asyncio.coroutines',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\coroutines.py',
+   'PYMODULE'),
+  ('asyncio.events',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\events.py',
+   'PYMODULE'),
+  ('asyncio.exceptions',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\exceptions.py',
+   'PYMODULE'),
+  ('asyncio.format_helpers',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\format_helpers.py',
+   'PYMODULE'),
+  ('asyncio.futures',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\futures.py',
+   'PYMODULE'),
+  ('asyncio.locks',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\locks.py',
+   'PYMODULE'),
+  ('asyncio.log',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\log.py',
+   'PYMODULE'),
+  ('asyncio.mixins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\mixins.py',
+   'PYMODULE'),
+  ('asyncio.proactor_events',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\proactor_events.py',
+   'PYMODULE'),
+  ('asyncio.protocols',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\protocols.py',
+   'PYMODULE'),
+  ('asyncio.queues',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\queues.py',
+   'PYMODULE'),
+  ('asyncio.runners',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\runners.py',
+   'PYMODULE'),
+  ('asyncio.selector_events',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\selector_events.py',
+   'PYMODULE'),
+  ('asyncio.sslproto',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\sslproto.py',
+   'PYMODULE'),
+  ('asyncio.staggered',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\staggered.py',
+   'PYMODULE'),
+  ('asyncio.streams',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\streams.py',
+   'PYMODULE'),
+  ('asyncio.subprocess',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\subprocess.py',
+   'PYMODULE'),
+  ('asyncio.taskgroups',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\taskgroups.py',
+   'PYMODULE'),
+  ('asyncio.tasks',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\tasks.py',
+   'PYMODULE'),
+  ('asyncio.threads',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\threads.py',
+   'PYMODULE'),
+  ('asyncio.timeouts',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\timeouts.py',
+   'PYMODULE'),
+  ('asyncio.transports',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\transports.py',
+   'PYMODULE'),
+  ('asyncio.trsock',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\trsock.py',
+   'PYMODULE'),
+  ('asyncio.unix_events',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\unix_events.py',
+   'PYMODULE'),
+  ('asyncio.windows_events',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\windows_events.py',
+   'PYMODULE'),
+  ('asyncio.windows_utils',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\windows_utils.py',
+   'PYMODULE'),
+  ('base64',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\base64.py',
+   'PYMODULE'),
+  ('bdb',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\bdb.py',
+   'PYMODULE'),
+  ('bisect',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\bisect.py',
+   'PYMODULE'),
+  ('bz2',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\bz2.py',
+   'PYMODULE'),
+  ('calendar',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\calendar.py',
+   'PYMODULE'),
+  ('certifi',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\__init__.py',
+   'PYMODULE'),
+  ('certifi.core',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\core.py',
+   'PYMODULE'),
+  ('charset_normalizer',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\charset_normalizer\\__init__.py',
+   'PYMODULE'),
+  ('charset_normalizer.api',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\charset_normalizer\\api.py',
+   'PYMODULE'),
+  ('charset_normalizer.constant',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\charset_normalizer\\constant.py',
+   'PYMODULE'),
+  ('charset_normalizer.legacy',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\charset_normalizer\\legacy.py',
+   'PYMODULE'),
+  ('charset_normalizer.models',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\charset_normalizer\\models.py',
+   'PYMODULE'),
+  ('charset_normalizer.utils',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\charset_normalizer\\utils.py',
+   'PYMODULE'),
+  ('charset_normalizer.version',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\charset_normalizer\\version.py',
+   'PYMODULE'),
+  ('cmd',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\cmd.py',
+   'PYMODULE'),
+  ('code',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\code.py',
+   'PYMODULE'),
+  ('codeop',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\codeop.py',
+   'PYMODULE'),
+  ('colorsys',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\colorsys.py',
+   'PYMODULE'),
+  ('concurrent',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\concurrent\\__init__.py',
+   'PYMODULE'),
+  ('concurrent.futures',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\concurrent\\futures\\__init__.py',
+   'PYMODULE'),
+  ('concurrent.futures._base',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\concurrent\\futures\\_base.py',
+   'PYMODULE'),
+  ('concurrent.futures.process',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\concurrent\\futures\\process.py',
+   'PYMODULE'),
+  ('concurrent.futures.thread',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\concurrent\\futures\\thread.py',
+   'PYMODULE'),
+  ('context',
+   'Y:\\Hackathan\\shellmind-ai-terminal\\context\\__init__.py',
+   'PYMODULE'),
+  ('context.detector',
+   'Y:\\Hackathan\\shellmind-ai-terminal\\context\\detector.py',
+   'PYMODULE'),
+  ('contextlib',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\contextlib.py',
+   'PYMODULE'),
+  ('contextvars',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\contextvars.py',
+   'PYMODULE'),
+  ('copy',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\copy.py',
+   'PYMODULE'),
+  ('core',
+   'Y:\\Hackathan\\shellmind-ai-terminal\\core\\__init__.py',
+   'PYMODULE'),
+  ('core.executor',
+   'Y:\\Hackathan\\shellmind-ai-terminal\\core\\executor.py',
+   'PYMODULE'),
+  ('core.os_detect',
+   'Y:\\Hackathan\\shellmind-ai-terminal\\core\\os_detect.py',
+   'PYMODULE'),
+  ('core.repl',
+   'Y:\\Hackathan\\shellmind-ai-terminal\\core\\repl.py',
+   'PYMODULE'),
+  ('csv',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\csv.py',
+   'PYMODULE'),
+  ('ctypes',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ctypes\\__init__.py',
+   'PYMODULE'),
+  ('ctypes._endian',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ctypes\\_endian.py',
+   'PYMODULE'),
+  ('ctypes.wintypes',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ctypes\\wintypes.py',
+   'PYMODULE'),
+  ('dataclasses',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\dataclasses.py',
+   'PYMODULE'),
+  ('datetime',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\datetime.py',
+   'PYMODULE'),
+  ('decimal',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\decimal.py',
+   'PYMODULE'),
+  ('dis',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\dis.py',
+   'PYMODULE'),
+  ('email',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\__init__.py',
+   'PYMODULE'),
+  ('email._encoded_words',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\_encoded_words.py',
+   'PYMODULE'),
+  ('email._header_value_parser',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\_header_value_parser.py',
+   'PYMODULE'),
+  ('email._parseaddr',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\_parseaddr.py',
+   'PYMODULE'),
+  ('email._policybase',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\_policybase.py',
+   'PYMODULE'),
+  ('email.base64mime',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\base64mime.py',
+   'PYMODULE'),
+  ('email.charset',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\charset.py',
+   'PYMODULE'),
+  ('email.contentmanager',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\contentmanager.py',
+   'PYMODULE'),
+  ('email.encoders',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\encoders.py',
+   'PYMODULE'),
+  ('email.errors',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\errors.py',
+   'PYMODULE'),
+  ('email.feedparser',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\feedparser.py',
+   'PYMODULE'),
+  ('email.generator',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\generator.py',
+   'PYMODULE'),
+  ('email.header',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\header.py',
+   'PYMODULE'),
+  ('email.headerregistry',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\headerregistry.py',
+   'PYMODULE'),
+  ('email.iterators',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\iterators.py',
+   'PYMODULE'),
+  ('email.message',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\message.py',
+   'PYMODULE'),
+  ('email.parser',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\parser.py',
+   'PYMODULE'),
+  ('email.policy',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\policy.py',
+   'PYMODULE'),
+  ('email.quoprimime',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\quoprimime.py',
+   'PYMODULE'),
+  ('email.utils',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\utils.py',
+   'PYMODULE'),
+  ('fnmatch',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\fnmatch.py',
+   'PYMODULE'),
+  ('fractions',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\fractions.py',
+   'PYMODULE'),
+  ('ftplib',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ftplib.py',
+   'PYMODULE'),
+  ('getopt',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\getopt.py',
+   'PYMODULE'),
+  ('getpass',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\getpass.py',
+   'PYMODULE'),
+  ('gettext',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\gettext.py',
+   'PYMODULE'),
+  ('glob',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\glob.py',
+   'PYMODULE'),
+  ('gzip',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\gzip.py',
+   'PYMODULE'),
+  ('hashlib',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\hashlib.py',
+   'PYMODULE'),
+  ('healing',
+   'Y:\\Hackathan\\shellmind-ai-terminal\\healing\\__init__.py',
+   'PYMODULE'),
+  ('healing.error_agent',
+   'Y:\\Hackathan\\shellmind-ai-terminal\\healing\\error_agent.py',
+   'PYMODULE'),
+  ('healing.file_ops',
+   'Y:\\Hackathan\\shellmind-ai-terminal\\healing\\file_ops.py',
+   'PYMODULE'),
+  ('hmac',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\hmac.py',
+   'PYMODULE'),
+  ('html',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\html\\__init__.py',
+   'PYMODULE'),
+  ('html.entities',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\html\\entities.py',
+   'PYMODULE'),
+  ('http',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\http\\__init__.py',
+   'PYMODULE'),
+  ('http.client',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\http\\client.py',
+   'PYMODULE'),
+  ('http.cookiejar',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\http\\cookiejar.py',
+   'PYMODULE'),
+  ('http.cookies',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\http\\cookies.py',
+   'PYMODULE'),
+  ('http.server',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\http\\server.py',
+   'PYMODULE'),
+  ('idna',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\idna\\__init__.py',
+   'PYMODULE'),
+  ('idna.core',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\idna\\core.py',
+   'PYMODULE'),
+  ('idna.idnadata',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\idna\\idnadata.py',
+   'PYMODULE'),
+  ('idna.intranges',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\idna\\intranges.py',
+   'PYMODULE'),
+  ('idna.package_data',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\idna\\package_data.py',
+   'PYMODULE'),
+  ('idna.uts46data',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\idna\\uts46data.py',
+   'PYMODULE'),
+  ('importlib',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\__init__.py',
+   'PYMODULE'),
+  ('importlib._abc',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\_abc.py',
+   'PYMODULE'),
+  ('importlib._bootstrap',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\_bootstrap.py',
+   'PYMODULE'),
+  ('importlib._bootstrap_external',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\_bootstrap_external.py',
+   'PYMODULE'),
+  ('importlib.abc',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\abc.py',
+   'PYMODULE'),
+  ('importlib.machinery',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\machinery.py',
+   'PYMODULE'),
+  ('importlib.metadata',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\metadata\\__init__.py',
+   'PYMODULE'),
+  ('importlib.metadata._adapters',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\metadata\\_adapters.py',
+   'PYMODULE'),
+  ('importlib.metadata._collections',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\metadata\\_collections.py',
+   'PYMODULE'),
+  ('importlib.metadata._functools',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\metadata\\_functools.py',
+   'PYMODULE'),
+  ('importlib.metadata._itertools',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\metadata\\_itertools.py',
+   'PYMODULE'),
+  ('importlib.metadata._meta',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\metadata\\_meta.py',
+   'PYMODULE'),
+  ('importlib.metadata._text',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\metadata\\_text.py',
+   'PYMODULE'),
+  ('importlib.readers',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\readers.py',
+   'PYMODULE'),
+  ('importlib.resources',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\resources\\__init__.py',
+   'PYMODULE'),
+  ('importlib.resources._adapters',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\resources\\_adapters.py',
+   'PYMODULE'),
+  ('importlib.resources._common',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\resources\\_common.py',
+   'PYMODULE'),
+  ('importlib.resources._itertools',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\resources\\_itertools.py',
+   'PYMODULE'),
+  ('importlib.resources._legacy',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\resources\\_legacy.py',
+   'PYMODULE'),
+  ('importlib.resources.abc',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\resources\\abc.py',
+   'PYMODULE'),
+  ('importlib.resources.readers',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\resources\\readers.py',
+   'PYMODULE'),
+  ('importlib.util',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\util.py',
+   'PYMODULE'),
+  ('inspect',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\inspect.py',
+   'PYMODULE'),
+  ('ipaddress',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ipaddress.py',
+   'PYMODULE'),
+  ('json',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\json\\__init__.py',
+   'PYMODULE'),
+  ('json.decoder',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\json\\decoder.py',
+   'PYMODULE'),
+  ('json.encoder',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\json\\encoder.py',
+   'PYMODULE'),
+  ('json.scanner',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\json\\scanner.py',
+   'PYMODULE'),
+  ('logging',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\logging\\__init__.py',
+   'PYMODULE'),
+  ('lzma',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\lzma.py',
+   'PYMODULE'),
+  ('mimetypes',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\mimetypes.py',
+   'PYMODULE'),
+  ('multiprocessing',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\__init__.py',
+   'PYMODULE'),
+  ('multiprocessing.connection',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\connection.py',
+   'PYMODULE'),
+  ('multiprocessing.context',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\context.py',
+   'PYMODULE'),
+  ('multiprocessing.dummy',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\dummy\\__init__.py',
+   'PYMODULE'),
+  ('multiprocessing.dummy.connection',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\dummy\\connection.py',
+   'PYMODULE'),
+  ('multiprocessing.forkserver',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\forkserver.py',
+   'PYMODULE'),
+  ('multiprocessing.heap',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\heap.py',
+   'PYMODULE'),
+  ('multiprocessing.managers',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\managers.py',
+   'PYMODULE'),
+  ('multiprocessing.pool',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\pool.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_fork',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\popen_fork.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_forkserver',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\popen_forkserver.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_posix',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\popen_spawn_posix.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_win32',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\popen_spawn_win32.py',
+   'PYMODULE'),
+  ('multiprocessing.process',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\process.py',
+   'PYMODULE'),
+  ('multiprocessing.queues',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\queues.py',
+   'PYMODULE'),
+  ('multiprocessing.reduction',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\reduction.py',
+   'PYMODULE'),
+  ('multiprocessing.resource_sharer',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\resource_sharer.py',
+   'PYMODULE'),
+  ('multiprocessing.resource_tracker',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\resource_tracker.py',
+   'PYMODULE'),
+  ('multiprocessing.shared_memory',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\shared_memory.py',
+   'PYMODULE'),
+  ('multiprocessing.sharedctypes',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\sharedctypes.py',
+   'PYMODULE'),
+  ('multiprocessing.spawn',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\spawn.py',
+   'PYMODULE'),
+  ('multiprocessing.synchronize',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\synchronize.py',
+   'PYMODULE'),
+  ('multiprocessing.util',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\util.py',
+   'PYMODULE'),
+  ('netrc',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\netrc.py',
+   'PYMODULE'),
+  ('nturl2path',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\nturl2path.py',
+   'PYMODULE'),
+  ('numbers',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\numbers.py',
+   'PYMODULE'),
+  ('opcode',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\opcode.py',
+   'PYMODULE'),
+  ('pathlib',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\pathlib.py',
+   'PYMODULE'),
+  ('pdb',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\pdb.py',
+   'PYMODULE'),
+  ('pickle',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\pickle.py',
+   'PYMODULE'),
+  ('pkgutil',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\pkgutil.py',
+   'PYMODULE'),
+  ('platform',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\platform.py',
+   'PYMODULE'),
+  ('pprint',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\pprint.py',
+   'PYMODULE'),
+  ('prompt_toolkit',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\__init__.py',
+   'PYMODULE'),
+  ('prompt_toolkit.application',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\application\\__init__.py',
+   'PYMODULE'),
+  ('prompt_toolkit.application.application',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\application\\application.py',
+   'PYMODULE'),
+  ('prompt_toolkit.application.current',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\application\\current.py',
+   'PYMODULE'),
+  ('prompt_toolkit.application.dummy',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\application\\dummy.py',
+   'PYMODULE'),
+  ('prompt_toolkit.application.run_in_terminal',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\application\\run_in_terminal.py',
+   'PYMODULE'),
+  ('prompt_toolkit.auto_suggest',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\auto_suggest.py',
+   'PYMODULE'),
+  ('prompt_toolkit.buffer',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\buffer.py',
+   'PYMODULE'),
+  ('prompt_toolkit.cache',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\cache.py',
+   'PYMODULE'),
+  ('prompt_toolkit.clipboard',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\clipboard\\__init__.py',
+   'PYMODULE'),
+  ('prompt_toolkit.clipboard.base',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\clipboard\\base.py',
+   'PYMODULE'),
+  ('prompt_toolkit.clipboard.in_memory',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\clipboard\\in_memory.py',
+   'PYMODULE'),
+  ('prompt_toolkit.completion',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\completion\\__init__.py',
+   'PYMODULE'),
+  ('prompt_toolkit.completion.base',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\completion\\base.py',
+   'PYMODULE'),
+  ('prompt_toolkit.completion.deduplicate',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\completion\\deduplicate.py',
+   'PYMODULE'),
+  ('prompt_toolkit.completion.filesystem',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\completion\\filesystem.py',
+   'PYMODULE'),
+  ('prompt_toolkit.completion.fuzzy_completer',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\completion\\fuzzy_completer.py',
+   'PYMODULE'),
+  ('prompt_toolkit.completion.nested',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\completion\\nested.py',
+   'PYMODULE'),
+  ('prompt_toolkit.completion.word_completer',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\completion\\word_completer.py',
+   'PYMODULE'),
+  ('prompt_toolkit.cursor_shapes',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\cursor_shapes.py',
+   'PYMODULE'),
+  ('prompt_toolkit.data_structures',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\data_structures.py',
+   'PYMODULE'),
+  ('prompt_toolkit.document',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\document.py',
+   'PYMODULE'),
+  ('prompt_toolkit.enums',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\enums.py',
+   'PYMODULE'),
+  ('prompt_toolkit.eventloop',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\eventloop\\__init__.py',
+   'PYMODULE'),
+  ('prompt_toolkit.eventloop.async_generator',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\eventloop\\async_generator.py',
+   'PYMODULE'),
+  ('prompt_toolkit.eventloop.inputhook',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\eventloop\\inputhook.py',
+   'PYMODULE'),
+  ('prompt_toolkit.eventloop.utils',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\eventloop\\utils.py',
+   'PYMODULE'),
+  ('prompt_toolkit.eventloop.win32',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\eventloop\\win32.py',
+   'PYMODULE'),
+  ('prompt_toolkit.filters',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\filters\\__init__.py',
+   'PYMODULE'),
+  ('prompt_toolkit.filters.app',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\filters\\app.py',
+   'PYMODULE'),
+  ('prompt_toolkit.filters.base',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\filters\\base.py',
+   'PYMODULE'),
+  ('prompt_toolkit.filters.cli',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\filters\\cli.py',
+   'PYMODULE'),
+  ('prompt_toolkit.filters.utils',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\filters\\utils.py',
+   'PYMODULE'),
+  ('prompt_toolkit.formatted_text',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\formatted_text\\__init__.py',
+   'PYMODULE'),
+  ('prompt_toolkit.formatted_text.ansi',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\formatted_text\\ansi.py',
+   'PYMODULE'),
+  ('prompt_toolkit.formatted_text.base',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\formatted_text\\base.py',
+   'PYMODULE'),
+  ('prompt_toolkit.formatted_text.html',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\formatted_text\\html.py',
+   'PYMODULE'),
+  ('prompt_toolkit.formatted_text.pygments',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\formatted_text\\pygments.py',
+   'PYMODULE'),
+  ('prompt_toolkit.formatted_text.utils',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\formatted_text\\utils.py',
+   'PYMODULE'),
+  ('prompt_toolkit.history',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\history.py',
+   'PYMODULE'),
+  ('prompt_toolkit.input',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\input\\__init__.py',
+   'PYMODULE'),
+  ('prompt_toolkit.input.ansi_escape_sequences',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\input\\ansi_escape_sequences.py',
+   'PYMODULE'),
+  ('prompt_toolkit.input.base',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\input\\base.py',
+   'PYMODULE'),
+  ('prompt_toolkit.input.defaults',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\input\\defaults.py',
+   'PYMODULE'),
+  ('prompt_toolkit.input.posix_pipe',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\input\\posix_pipe.py',
+   'PYMODULE'),
+  ('prompt_toolkit.input.posix_utils',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\input\\posix_utils.py',
+   'PYMODULE'),
+  ('prompt_toolkit.input.typeahead',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\input\\typeahead.py',
+   'PYMODULE'),
+  ('prompt_toolkit.input.vt100',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\input\\vt100.py',
+   'PYMODULE'),
+  ('prompt_toolkit.input.vt100_parser',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\input\\vt100_parser.py',
+   'PYMODULE'),
+  ('prompt_toolkit.input.win32',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\input\\win32.py',
+   'PYMODULE'),
+  ('prompt_toolkit.input.win32_pipe',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\input\\win32_pipe.py',
+   'PYMODULE'),
+  ('prompt_toolkit.key_binding',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\key_binding\\__init__.py',
+   'PYMODULE'),
+  ('prompt_toolkit.key_binding.bindings',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\key_binding\\bindings\\__init__.py',
+   'PYMODULE'),
+  ('prompt_toolkit.key_binding.bindings.auto_suggest',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\key_binding\\bindings\\auto_suggest.py',
+   'PYMODULE'),
+  ('prompt_toolkit.key_binding.bindings.basic',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\key_binding\\bindings\\basic.py',
+   'PYMODULE'),
+  ('prompt_toolkit.key_binding.bindings.completion',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\key_binding\\bindings\\completion.py',
+   'PYMODULE'),
+  ('prompt_toolkit.key_binding.bindings.cpr',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\key_binding\\bindings\\cpr.py',
+   'PYMODULE'),
+  ('prompt_toolkit.key_binding.bindings.emacs',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\key_binding\\bindings\\emacs.py',
+   'PYMODULE'),
+  ('prompt_toolkit.key_binding.bindings.focus',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\key_binding\\bindings\\focus.py',
+   'PYMODULE'),
+  ('prompt_toolkit.key_binding.bindings.mouse',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\key_binding\\bindings\\mouse.py',
+   'PYMODULE'),
+  ('prompt_toolkit.key_binding.bindings.named_commands',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\key_binding\\bindings\\named_commands.py',
+   'PYMODULE'),
+  ('prompt_toolkit.key_binding.bindings.open_in_editor',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\key_binding\\bindings\\open_in_editor.py',
+   'PYMODULE'),
+  ('prompt_toolkit.key_binding.bindings.page_navigation',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\key_binding\\bindings\\page_navigation.py',
+   'PYMODULE'),
+  ('prompt_toolkit.key_binding.bindings.scroll',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\key_binding\\bindings\\scroll.py',
+   'PYMODULE'),
+  ('prompt_toolkit.key_binding.bindings.search',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\key_binding\\bindings\\search.py',
+   'PYMODULE'),
+  ('prompt_toolkit.key_binding.bindings.vi',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\key_binding\\bindings\\vi.py',
+   'PYMODULE'),
+  ('prompt_toolkit.key_binding.defaults',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\key_binding\\defaults.py',
+   'PYMODULE'),
+  ('prompt_toolkit.key_binding.digraphs',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\key_binding\\digraphs.py',
+   'PYMODULE'),
+  ('prompt_toolkit.key_binding.emacs_state',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\key_binding\\emacs_state.py',
+   'PYMODULE'),
+  ('prompt_toolkit.key_binding.key_bindings',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\key_binding\\key_bindings.py',
+   'PYMODULE'),
+  ('prompt_toolkit.key_binding.key_processor',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\key_binding\\key_processor.py',
+   'PYMODULE'),
+  ('prompt_toolkit.key_binding.vi_state',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\key_binding\\vi_state.py',
+   'PYMODULE'),
+  ('prompt_toolkit.keys',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\keys.py',
+   'PYMODULE'),
+  ('prompt_toolkit.layout',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\layout\\__init__.py',
+   'PYMODULE'),
+  ('prompt_toolkit.layout.containers',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\layout\\containers.py',
+   'PYMODULE'),
+  ('prompt_toolkit.layout.controls',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\layout\\controls.py',
+   'PYMODULE'),
+  ('prompt_toolkit.layout.dimension',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\layout\\dimension.py',
+   'PYMODULE'),
+  ('prompt_toolkit.layout.dummy',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\layout\\dummy.py',
+   'PYMODULE'),
+  ('prompt_toolkit.layout.layout',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\layout\\layout.py',
+   'PYMODULE'),
+  ('prompt_toolkit.layout.margins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\layout\\margins.py',
+   'PYMODULE'),
+  ('prompt_toolkit.layout.menus',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\layout\\menus.py',
+   'PYMODULE'),
+  ('prompt_toolkit.layout.mouse_handlers',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\layout\\mouse_handlers.py',
+   'PYMODULE'),
+  ('prompt_toolkit.layout.processors',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\layout\\processors.py',
+   'PYMODULE'),
+  ('prompt_toolkit.layout.screen',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\layout\\screen.py',
+   'PYMODULE'),
+  ('prompt_toolkit.layout.scrollable_pane',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\layout\\scrollable_pane.py',
+   'PYMODULE'),
+  ('prompt_toolkit.layout.utils',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\layout\\utils.py',
+   'PYMODULE'),
+  ('prompt_toolkit.lexers',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\lexers\\__init__.py',
+   'PYMODULE'),
+  ('prompt_toolkit.lexers.base',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\lexers\\base.py',
+   'PYMODULE'),
+  ('prompt_toolkit.lexers.pygments',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\lexers\\pygments.py',
+   'PYMODULE'),
+  ('prompt_toolkit.mouse_events',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\mouse_events.py',
+   'PYMODULE'),
+  ('prompt_toolkit.output',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\output\\__init__.py',
+   'PYMODULE'),
+  ('prompt_toolkit.output.base',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\output\\base.py',
+   'PYMODULE'),
+  ('prompt_toolkit.output.color_depth',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\output\\color_depth.py',
+   'PYMODULE'),
+  ('prompt_toolkit.output.conemu',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\output\\conemu.py',
+   'PYMODULE'),
+  ('prompt_toolkit.output.defaults',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\output\\defaults.py',
+   'PYMODULE'),
+  ('prompt_toolkit.output.flush_stdout',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\output\\flush_stdout.py',
+   'PYMODULE'),
+  ('prompt_toolkit.output.plain_text',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\output\\plain_text.py',
+   'PYMODULE'),
+  ('prompt_toolkit.output.vt100',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\output\\vt100.py',
+   'PYMODULE'),
+  ('prompt_toolkit.output.win32',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\output\\win32.py',
+   'PYMODULE'),
+  ('prompt_toolkit.output.windows10',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\output\\windows10.py',
+   'PYMODULE'),
+  ('prompt_toolkit.patch_stdout',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\patch_stdout.py',
+   'PYMODULE'),
+  ('prompt_toolkit.renderer',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\renderer.py',
+   'PYMODULE'),
+  ('prompt_toolkit.search',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\search.py',
+   'PYMODULE'),
+  ('prompt_toolkit.selection',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\selection.py',
+   'PYMODULE'),
+  ('prompt_toolkit.shortcuts',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\shortcuts\\__init__.py',
+   'PYMODULE'),
+  ('prompt_toolkit.shortcuts.choice_input',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\shortcuts\\choice_input.py',
+   'PYMODULE'),
+  ('prompt_toolkit.shortcuts.dialogs',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\shortcuts\\dialogs.py',
+   'PYMODULE'),
+  ('prompt_toolkit.shortcuts.progress_bar',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\shortcuts\\progress_bar\\__init__.py',
+   'PYMODULE'),
+  ('prompt_toolkit.shortcuts.progress_bar.base',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\shortcuts\\progress_bar\\base.py',
+   'PYMODULE'),
+  ('prompt_toolkit.shortcuts.progress_bar.formatters',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\shortcuts\\progress_bar\\formatters.py',
+   'PYMODULE'),
+  ('prompt_toolkit.shortcuts.prompt',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\shortcuts\\prompt.py',
+   'PYMODULE'),
+  ('prompt_toolkit.shortcuts.utils',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\shortcuts\\utils.py',
+   'PYMODULE'),
+  ('prompt_toolkit.styles',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\styles\\__init__.py',
+   'PYMODULE'),
+  ('prompt_toolkit.styles.base',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\styles\\base.py',
+   'PYMODULE'),
+  ('prompt_toolkit.styles.defaults',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\styles\\defaults.py',
+   'PYMODULE'),
+  ('prompt_toolkit.styles.named_colors',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\styles\\named_colors.py',
+   'PYMODULE'),
+  ('prompt_toolkit.styles.pygments',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\styles\\pygments.py',
+   'PYMODULE'),
+  ('prompt_toolkit.styles.style',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\styles\\style.py',
+   'PYMODULE'),
+  ('prompt_toolkit.styles.style_transformation',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\styles\\style_transformation.py',
+   'PYMODULE'),
+  ('prompt_toolkit.utils',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\utils.py',
+   'PYMODULE'),
+  ('prompt_toolkit.validation',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\validation.py',
+   'PYMODULE'),
+  ('prompt_toolkit.widgets',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\widgets\\__init__.py',
+   'PYMODULE'),
+  ('prompt_toolkit.widgets.base',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\widgets\\base.py',
+   'PYMODULE'),
+  ('prompt_toolkit.widgets.dialogs',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\widgets\\dialogs.py',
+   'PYMODULE'),
+  ('prompt_toolkit.widgets.menus',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\widgets\\menus.py',
+   'PYMODULE'),
+  ('prompt_toolkit.widgets.toolbars',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\widgets\\toolbars.py',
+   'PYMODULE'),
+  ('prompt_toolkit.win32_types',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\prompt_toolkit\\win32_types.py',
+   'PYMODULE'),
+  ('py_compile',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\py_compile.py',
+   'PYMODULE'),
+  ('pydoc',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\pydoc.py',
+   'PYMODULE'),
+  ('pydoc_data',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\pydoc_data\\__init__.py',
+   'PYMODULE'),
+  ('pydoc_data.topics',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\pydoc_data\\topics.py',
+   'PYMODULE'),
+  ('pygments',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\__init__.py',
+   'PYMODULE'),
+  ('pygments.console',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\console.py',
+   'PYMODULE'),
+  ('pygments.filter',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\filter.py',
+   'PYMODULE'),
+  ('pygments.filters',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\filters\\__init__.py',
+   'PYMODULE'),
+  ('pygments.formatter',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\formatter.py',
+   'PYMODULE'),
+  ('pygments.formatters',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\formatters\\__init__.py',
+   'PYMODULE'),
+  ('pygments.formatters._mapping',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\formatters\\_mapping.py',
+   'PYMODULE'),
+  ('pygments.formatters.bbcode',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\formatters\\bbcode.py',
+   'PYMODULE'),
+  ('pygments.formatters.groff',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\formatters\\groff.py',
+   'PYMODULE'),
+  ('pygments.formatters.html',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\formatters\\html.py',
+   'PYMODULE'),
+  ('pygments.formatters.img',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\formatters\\img.py',
+   'PYMODULE'),
+  ('pygments.formatters.irc',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\formatters\\irc.py',
+   'PYMODULE'),
+  ('pygments.formatters.latex',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\formatters\\latex.py',
+   'PYMODULE'),
+  ('pygments.formatters.other',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\formatters\\other.py',
+   'PYMODULE'),
+  ('pygments.formatters.pangomarkup',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\formatters\\pangomarkup.py',
+   'PYMODULE'),
+  ('pygments.formatters.rtf',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\formatters\\rtf.py',
+   'PYMODULE'),
+  ('pygments.formatters.svg',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\formatters\\svg.py',
+   'PYMODULE'),
+  ('pygments.formatters.terminal',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\formatters\\terminal.py',
+   'PYMODULE'),
+  ('pygments.formatters.terminal256',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\formatters\\terminal256.py',
+   'PYMODULE'),
+  ('pygments.lexer',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexer.py',
+   'PYMODULE'),
+  ('pygments.lexers',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\__init__.py',
+   'PYMODULE'),
+  ('pygments.lexers._ada_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_ada_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._asy_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_asy_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._cl_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_cl_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._cocoa_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_cocoa_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._csound_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_csound_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._css_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_css_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._googlesql_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_googlesql_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._julia_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_julia_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._lasso_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_lasso_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._lilypond_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_lilypond_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._lua_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_lua_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._luau_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_luau_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._mapping',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_mapping.py',
+   'PYMODULE'),
+  ('pygments.lexers._mql_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_mql_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._mysql_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_mysql_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._openedge_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_openedge_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._php_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_php_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._postgres_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_postgres_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._qlik_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_qlik_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._scheme_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_scheme_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._scilab_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_scilab_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._sourcemod_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_sourcemod_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._sql_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_sql_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._stan_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_stan_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._stata_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_stata_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._tsql_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_tsql_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._usd_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_usd_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._vbscript_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_vbscript_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._vim_builtins',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\_vim_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.actionscript',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\actionscript.py',
+   'PYMODULE'),
+  ('pygments.lexers.ada',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\ada.py',
+   'PYMODULE'),
+  ('pygments.lexers.agile',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\agile.py',
+   'PYMODULE'),
+  ('pygments.lexers.algebra',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\algebra.py',
+   'PYMODULE'),
+  ('pygments.lexers.ambient',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\ambient.py',
+   'PYMODULE'),
+  ('pygments.lexers.amdgpu',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\amdgpu.py',
+   'PYMODULE'),
+  ('pygments.lexers.ampl',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\ampl.py',
+   'PYMODULE'),
+  ('pygments.lexers.apdlexer',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\apdlexer.py',
+   'PYMODULE'),
+  ('pygments.lexers.apl',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\apl.py',
+   'PYMODULE'),
+  ('pygments.lexers.archetype',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\archetype.py',
+   'PYMODULE'),
+  ('pygments.lexers.arrow',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\arrow.py',
+   'PYMODULE'),
+  ('pygments.lexers.arturo',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\arturo.py',
+   'PYMODULE'),
+  ('pygments.lexers.asc',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\asc.py',
+   'PYMODULE'),
+  ('pygments.lexers.asm',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\asm.py',
+   'PYMODULE'),
+  ('pygments.lexers.asn1',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\asn1.py',
+   'PYMODULE'),
+  ('pygments.lexers.automation',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\automation.py',
+   'PYMODULE'),
+  ('pygments.lexers.bare',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\bare.py',
+   'PYMODULE'),
+  ('pygments.lexers.basic',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\basic.py',
+   'PYMODULE'),
+  ('pygments.lexers.bdd',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\bdd.py',
+   'PYMODULE'),
+  ('pygments.lexers.berry',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\berry.py',
+   'PYMODULE'),
+  ('pygments.lexers.bibtex',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\bibtex.py',
+   'PYMODULE'),
+  ('pygments.lexers.blueprint',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\blueprint.py',
+   'PYMODULE'),
+  ('pygments.lexers.boa',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\boa.py',
+   'PYMODULE'),
+  ('pygments.lexers.bqn',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\bqn.py',
+   'PYMODULE'),
+  ('pygments.lexers.business',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\business.py',
+   'PYMODULE'),
+  ('pygments.lexers.c_cpp',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\c_cpp.py',
+   'PYMODULE'),
+  ('pygments.lexers.c_like',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\c_like.py',
+   'PYMODULE'),
+  ('pygments.lexers.capnproto',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\capnproto.py',
+   'PYMODULE'),
+  ('pygments.lexers.carbon',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\carbon.py',
+   'PYMODULE'),
+  ('pygments.lexers.cddl',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\cddl.py',
+   'PYMODULE'),
+  ('pygments.lexers.chapel',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\chapel.py',
+   'PYMODULE'),
+  ('pygments.lexers.clean',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\clean.py',
+   'PYMODULE'),
+  ('pygments.lexers.codeql',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\codeql.py',
+   'PYMODULE'),
+  ('pygments.lexers.comal',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\comal.py',
+   'PYMODULE'),
+  ('pygments.lexers.compiled',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\compiled.py',
+   'PYMODULE'),
+  ('pygments.lexers.configs',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\configs.py',
+   'PYMODULE'),
+  ('pygments.lexers.console',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\console.py',
+   'PYMODULE'),
+  ('pygments.lexers.cplint',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\cplint.py',
+   'PYMODULE'),
+  ('pygments.lexers.crystal',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\crystal.py',
+   'PYMODULE'),
+  ('pygments.lexers.csound',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\csound.py',
+   'PYMODULE'),
+  ('pygments.lexers.css',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\css.py',
+   'PYMODULE'),
+  ('pygments.lexers.d',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\d.py',
+   'PYMODULE'),
+  ('pygments.lexers.dalvik',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\dalvik.py',
+   'PYMODULE'),
+  ('pygments.lexers.data',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\data.py',
+   'PYMODULE'),
+  ('pygments.lexers.dax',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\dax.py',
+   'PYMODULE'),
+  ('pygments.lexers.devicetree',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\devicetree.py',
+   'PYMODULE'),
+  ('pygments.lexers.diff',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\diff.py',
+   'PYMODULE'),
+  ('pygments.lexers.dns',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\dns.py',
+   'PYMODULE'),
+  ('pygments.lexers.dotnet',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\dotnet.py',
+   'PYMODULE'),
+  ('pygments.lexers.dsls',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\dsls.py',
+   'PYMODULE'),
+  ('pygments.lexers.dylan',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\dylan.py',
+   'PYMODULE'),
+  ('pygments.lexers.ecl',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\ecl.py',
+   'PYMODULE'),
+  ('pygments.lexers.eiffel',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\eiffel.py',
+   'PYMODULE'),
+  ('pygments.lexers.elm',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\elm.py',
+   'PYMODULE'),
+  ('pygments.lexers.elpi',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\elpi.py',
+   'PYMODULE'),
+  ('pygments.lexers.email',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\email.py',
+   'PYMODULE'),
+  ('pygments.lexers.erlang',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\erlang.py',
+   'PYMODULE'),
+  ('pygments.lexers.esoteric',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\esoteric.py',
+   'PYMODULE'),
+  ('pygments.lexers.ezhil',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\ezhil.py',
+   'PYMODULE'),
+  ('pygments.lexers.factor',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\factor.py',
+   'PYMODULE'),
+  ('pygments.lexers.fantom',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\fantom.py',
+   'PYMODULE'),
+  ('pygments.lexers.felix',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\felix.py',
+   'PYMODULE'),
+  ('pygments.lexers.fift',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\fift.py',
+   'PYMODULE'),
+  ('pygments.lexers.floscript',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\floscript.py',
+   'PYMODULE'),
+  ('pygments.lexers.forth',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\forth.py',
+   'PYMODULE'),
+  ('pygments.lexers.fortran',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\fortran.py',
+   'PYMODULE'),
+  ('pygments.lexers.foxpro',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\foxpro.py',
+   'PYMODULE'),
+  ('pygments.lexers.freefem',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\freefem.py',
+   'PYMODULE'),
+  ('pygments.lexers.func',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\func.py',
+   'PYMODULE'),
+  ('pygments.lexers.functional',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\functional.py',
+   'PYMODULE'),
+  ('pygments.lexers.futhark',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\futhark.py',
+   'PYMODULE'),
+  ('pygments.lexers.gcodelexer',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\gcodelexer.py',
+   'PYMODULE'),
+  ('pygments.lexers.gdscript',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\gdscript.py',
+   'PYMODULE'),
+  ('pygments.lexers.gleam',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\gleam.py',
+   'PYMODULE'),
+  ('pygments.lexers.go',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\go.py',
+   'PYMODULE'),
+  ('pygments.lexers.grammar_notation',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\grammar_notation.py',
+   'PYMODULE'),
+  ('pygments.lexers.graph',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\graph.py',
+   'PYMODULE'),
+  ('pygments.lexers.graphics',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\graphics.py',
+   'PYMODULE'),
+  ('pygments.lexers.graphql',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\graphql.py',
+   'PYMODULE'),
+  ('pygments.lexers.graphviz',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\graphviz.py',
+   'PYMODULE'),
+  ('pygments.lexers.gsql',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\gsql.py',
+   'PYMODULE'),
+  ('pygments.lexers.hare',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\hare.py',
+   'PYMODULE'),
+  ('pygments.lexers.haskell',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\haskell.py',
+   'PYMODULE'),
+  ('pygments.lexers.haxe',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\haxe.py',
+   'PYMODULE'),
+  ('pygments.lexers.hdl',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\hdl.py',
+   'PYMODULE'),
+  ('pygments.lexers.hexdump',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\hexdump.py',
+   'PYMODULE'),
+  ('pygments.lexers.html',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\html.py',
+   'PYMODULE'),
+  ('pygments.lexers.idl',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\idl.py',
+   'PYMODULE'),
+  ('pygments.lexers.igor',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\igor.py',
+   'PYMODULE'),
+  ('pygments.lexers.inferno',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\inferno.py',
+   'PYMODULE'),
+  ('pygments.lexers.installers',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\installers.py',
+   'PYMODULE'),
+  ('pygments.lexers.int_fiction',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\int_fiction.py',
+   'PYMODULE'),
+  ('pygments.lexers.iolang',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\iolang.py',
+   'PYMODULE'),
+  ('pygments.lexers.j',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\j.py',
+   'PYMODULE'),
+  ('pygments.lexers.javascript',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\javascript.py',
+   'PYMODULE'),
+  ('pygments.lexers.jmespath',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\jmespath.py',
+   'PYMODULE'),
+  ('pygments.lexers.jslt',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\jslt.py',
+   'PYMODULE'),
+  ('pygments.lexers.json5',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\json5.py',
+   'PYMODULE'),
+  ('pygments.lexers.jsonnet',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\jsonnet.py',
+   'PYMODULE'),
+  ('pygments.lexers.jsx',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\jsx.py',
+   'PYMODULE'),
+  ('pygments.lexers.julia',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\julia.py',
+   'PYMODULE'),
+  ('pygments.lexers.jvm',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\jvm.py',
+   'PYMODULE'),
+  ('pygments.lexers.kuin',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\kuin.py',
+   'PYMODULE'),
+  ('pygments.lexers.kusto',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\kusto.py',
+   'PYMODULE'),
+  ('pygments.lexers.ldap',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\ldap.py',
+   'PYMODULE'),
+  ('pygments.lexers.lean',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\lean.py',
+   'PYMODULE'),
+  ('pygments.lexers.lilypond',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\lilypond.py',
+   'PYMODULE'),
+  ('pygments.lexers.lisp',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\lisp.py',
+   'PYMODULE'),
+  ('pygments.lexers.macaulay2',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\macaulay2.py',
+   'PYMODULE'),
+  ('pygments.lexers.make',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\make.py',
+   'PYMODULE'),
+  ('pygments.lexers.maple',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\maple.py',
+   'PYMODULE'),
+  ('pygments.lexers.markup',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\markup.py',
+   'PYMODULE'),
+  ('pygments.lexers.math',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\math.py',
+   'PYMODULE'),
+  ('pygments.lexers.matlab',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\matlab.py',
+   'PYMODULE'),
+  ('pygments.lexers.maxima',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\maxima.py',
+   'PYMODULE'),
+  ('pygments.lexers.meson',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\meson.py',
+   'PYMODULE'),
+  ('pygments.lexers.mime',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\mime.py',
+   'PYMODULE'),
+  ('pygments.lexers.minecraft',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\minecraft.py',
+   'PYMODULE'),
+  ('pygments.lexers.mips',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\mips.py',
+   'PYMODULE'),
+  ('pygments.lexers.ml',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\ml.py',
+   'PYMODULE'),
+  ('pygments.lexers.modeling',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\modeling.py',
+   'PYMODULE'),
+  ('pygments.lexers.modula2',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\modula2.py',
+   'PYMODULE'),
+  ('pygments.lexers.mojo',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\mojo.py',
+   'PYMODULE'),
+  ('pygments.lexers.monte',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\monte.py',
+   'PYMODULE'),
+  ('pygments.lexers.mosel',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\mosel.py',
+   'PYMODULE'),
+  ('pygments.lexers.ncl',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\ncl.py',
+   'PYMODULE'),
+  ('pygments.lexers.nimrod',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\nimrod.py',
+   'PYMODULE'),
+  ('pygments.lexers.nit',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\nit.py',
+   'PYMODULE'),
+  ('pygments.lexers.nix',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\nix.py',
+   'PYMODULE'),
+  ('pygments.lexers.numbair',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\numbair.py',
+   'PYMODULE'),
+  ('pygments.lexers.oberon',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\oberon.py',
+   'PYMODULE'),
+  ('pygments.lexers.objective',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\objective.py',
+   'PYMODULE'),
+  ('pygments.lexers.ooc',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\ooc.py',
+   'PYMODULE'),
+  ('pygments.lexers.openscad',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\openscad.py',
+   'PYMODULE'),
+  ('pygments.lexers.other',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\other.py',
+   'PYMODULE'),
+  ('pygments.lexers.parasail',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\parasail.py',
+   'PYMODULE'),
+  ('pygments.lexers.parsers',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\parsers.py',
+   'PYMODULE'),
+  ('pygments.lexers.pascal',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\pascal.py',
+   'PYMODULE'),
+  ('pygments.lexers.pawn',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\pawn.py',
+   'PYMODULE'),
+  ('pygments.lexers.pddl',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\pddl.py',
+   'PYMODULE'),
+  ('pygments.lexers.perl',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\perl.py',
+   'PYMODULE'),
+  ('pygments.lexers.phix',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\phix.py',
+   'PYMODULE'),
+  ('pygments.lexers.php',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\php.py',
+   'PYMODULE'),
+  ('pygments.lexers.pointless',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\pointless.py',
+   'PYMODULE'),
+  ('pygments.lexers.pony',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\pony.py',
+   'PYMODULE'),
+  ('pygments.lexers.praat',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\praat.py',
+   'PYMODULE'),
+  ('pygments.lexers.procfile',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\procfile.py',
+   'PYMODULE'),
+  ('pygments.lexers.prolog',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\prolog.py',
+   'PYMODULE'),
+  ('pygments.lexers.promql',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\promql.py',
+   'PYMODULE'),
+  ('pygments.lexers.prql',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\prql.py',
+   'PYMODULE'),
+  ('pygments.lexers.ptx',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\ptx.py',
+   'PYMODULE'),
+  ('pygments.lexers.python',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\python.py',
+   'PYMODULE'),
+  ('pygments.lexers.q',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\q.py',
+   'PYMODULE'),
+  ('pygments.lexers.qlik',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\qlik.py',
+   'PYMODULE'),
+  ('pygments.lexers.qvt',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\qvt.py',
+   'PYMODULE'),
+  ('pygments.lexers.r',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\r.py',
+   'PYMODULE'),
+  ('pygments.lexers.rdf',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\rdf.py',
+   'PYMODULE'),
+  ('pygments.lexers.rebol',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\rebol.py',
+   'PYMODULE'),
+  ('pygments.lexers.rego',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\rego.py',
+   'PYMODULE'),
+  ('pygments.lexers.resource',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\resource.py',
+   'PYMODULE'),
+  ('pygments.lexers.ride',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\ride.py',
+   'PYMODULE'),
+  ('pygments.lexers.rita',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\rita.py',
+   'PYMODULE'),
+  ('pygments.lexers.rnc',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\rnc.py',
+   'PYMODULE'),
+  ('pygments.lexers.roboconf',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\roboconf.py',
+   'PYMODULE'),
+  ('pygments.lexers.robotframework',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\robotframework.py',
+   'PYMODULE'),
+  ('pygments.lexers.ruby',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\ruby.py',
+   'PYMODULE'),
+  ('pygments.lexers.rust',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\rust.py',
+   'PYMODULE'),
+  ('pygments.lexers.sas',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\sas.py',
+   'PYMODULE'),
+  ('pygments.lexers.savi',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\savi.py',
+   'PYMODULE'),
+  ('pygments.lexers.scdoc',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\scdoc.py',
+   'PYMODULE'),
+  ('pygments.lexers.scripting',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\scripting.py',
+   'PYMODULE'),
+  ('pygments.lexers.sgf',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\sgf.py',
+   'PYMODULE'),
+  ('pygments.lexers.shell',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\shell.py',
+   'PYMODULE'),
+  ('pygments.lexers.sieve',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\sieve.py',
+   'PYMODULE'),
+  ('pygments.lexers.slash',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\slash.py',
+   'PYMODULE'),
+  ('pygments.lexers.smalltalk',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\smalltalk.py',
+   'PYMODULE'),
+  ('pygments.lexers.smithy',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\smithy.py',
+   'PYMODULE'),
+  ('pygments.lexers.smv',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\smv.py',
+   'PYMODULE'),
+  ('pygments.lexers.snobol',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\snobol.py',
+   'PYMODULE'),
+  ('pygments.lexers.solidity',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\solidity.py',
+   'PYMODULE'),
+  ('pygments.lexers.soong',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\soong.py',
+   'PYMODULE'),
+  ('pygments.lexers.sophia',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\sophia.py',
+   'PYMODULE'),
+  ('pygments.lexers.special',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\special.py',
+   'PYMODULE'),
+  ('pygments.lexers.spice',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\spice.py',
+   'PYMODULE'),
+  ('pygments.lexers.sql',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\sql.py',
+   'PYMODULE'),
+  ('pygments.lexers.srcinfo',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\srcinfo.py',
+   'PYMODULE'),
+  ('pygments.lexers.stata',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\stata.py',
+   'PYMODULE'),
+  ('pygments.lexers.supercollider',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\supercollider.py',
+   'PYMODULE'),
+  ('pygments.lexers.tablegen',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\tablegen.py',
+   'PYMODULE'),
+  ('pygments.lexers.tact',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\tact.py',
+   'PYMODULE'),
+  ('pygments.lexers.tal',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\tal.py',
+   'PYMODULE'),
+  ('pygments.lexers.tcl',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\tcl.py',
+   'PYMODULE'),
+  ('pygments.lexers.teal',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\teal.py',
+   'PYMODULE'),
+  ('pygments.lexers.templates',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\templates.py',
+   'PYMODULE'),
+  ('pygments.lexers.teraterm',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\teraterm.py',
+   'PYMODULE'),
+  ('pygments.lexers.testing',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\testing.py',
+   'PYMODULE'),
+  ('pygments.lexers.text',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\text.py',
+   'PYMODULE'),
+  ('pygments.lexers.textedit',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\textedit.py',
+   'PYMODULE'),
+  ('pygments.lexers.textfmts',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\textfmts.py',
+   'PYMODULE'),
+  ('pygments.lexers.theorem',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\theorem.py',
+   'PYMODULE'),
+  ('pygments.lexers.thingsdb',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\thingsdb.py',
+   'PYMODULE'),
+  ('pygments.lexers.tlb',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\tlb.py',
+   'PYMODULE'),
+  ('pygments.lexers.tls',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\tls.py',
+   'PYMODULE'),
+  ('pygments.lexers.tnt',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\tnt.py',
+   'PYMODULE'),
+  ('pygments.lexers.trafficscript',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\trafficscript.py',
+   'PYMODULE'),
+  ('pygments.lexers.typoscript',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\typoscript.py',
+   'PYMODULE'),
+  ('pygments.lexers.typst',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\typst.py',
+   'PYMODULE'),
+  ('pygments.lexers.ul4',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\ul4.py',
+   'PYMODULE'),
+  ('pygments.lexers.unicon',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\unicon.py',
+   'PYMODULE'),
+  ('pygments.lexers.urbi',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\urbi.py',
+   'PYMODULE'),
+  ('pygments.lexers.usd',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\usd.py',
+   'PYMODULE'),
+  ('pygments.lexers.varnish',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\varnish.py',
+   'PYMODULE'),
+  ('pygments.lexers.verification',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\verification.py',
+   'PYMODULE'),
+  ('pygments.lexers.verifpal',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\verifpal.py',
+   'PYMODULE'),
+  ('pygments.lexers.vip',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\vip.py',
+   'PYMODULE'),
+  ('pygments.lexers.vyper',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\vyper.py',
+   'PYMODULE'),
+  ('pygments.lexers.web',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\web.py',
+   'PYMODULE'),
+  ('pygments.lexers.webassembly',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\webassembly.py',
+   'PYMODULE'),
+  ('pygments.lexers.webidl',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\webidl.py',
+   'PYMODULE'),
+  ('pygments.lexers.webmisc',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\webmisc.py',
+   'PYMODULE'),
+  ('pygments.lexers.wgsl',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\wgsl.py',
+   'PYMODULE'),
+  ('pygments.lexers.whiley',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\whiley.py',
+   'PYMODULE'),
+  ('pygments.lexers.wowtoc',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\wowtoc.py',
+   'PYMODULE'),
+  ('pygments.lexers.wren',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\wren.py',
+   'PYMODULE'),
+  ('pygments.lexers.x10',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\x10.py',
+   'PYMODULE'),
+  ('pygments.lexers.xorg',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\xorg.py',
+   'PYMODULE'),
+  ('pygments.lexers.yang',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\yang.py',
+   'PYMODULE'),
+  ('pygments.lexers.yara',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\yara.py',
+   'PYMODULE'),
+  ('pygments.lexers.zig',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\lexers\\zig.py',
+   'PYMODULE'),
+  ('pygments.modeline',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\modeline.py',
+   'PYMODULE'),
+  ('pygments.plugin',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\plugin.py',
+   'PYMODULE'),
+  ('pygments.regexopt',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\regexopt.py',
+   'PYMODULE'),
+  ('pygments.scanner',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\scanner.py',
+   'PYMODULE'),
+  ('pygments.style',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\style.py',
+   'PYMODULE'),
+  ('pygments.styles',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\__init__.py',
+   'PYMODULE'),
+  ('pygments.styles._mapping',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\_mapping.py',
+   'PYMODULE'),
+  ('pygments.styles.abap',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\abap.py',
+   'PYMODULE'),
+  ('pygments.styles.algol',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\algol.py',
+   'PYMODULE'),
+  ('pygments.styles.algol_nu',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\algol_nu.py',
+   'PYMODULE'),
+  ('pygments.styles.arduino',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\arduino.py',
+   'PYMODULE'),
+  ('pygments.styles.autumn',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\autumn.py',
+   'PYMODULE'),
+  ('pygments.styles.borland',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\borland.py',
+   'PYMODULE'),
+  ('pygments.styles.bw',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\bw.py',
+   'PYMODULE'),
+  ('pygments.styles.coffee',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\coffee.py',
+   'PYMODULE'),
+  ('pygments.styles.colorful',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\colorful.py',
+   'PYMODULE'),
+  ('pygments.styles.default',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\default.py',
+   'PYMODULE'),
+  ('pygments.styles.dracula',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\dracula.py',
+   'PYMODULE'),
+  ('pygments.styles.emacs',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\emacs.py',
+   'PYMODULE'),
+  ('pygments.styles.friendly',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\friendly.py',
+   'PYMODULE'),
+  ('pygments.styles.friendly_grayscale',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\friendly_grayscale.py',
+   'PYMODULE'),
+  ('pygments.styles.fruity',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\fruity.py',
+   'PYMODULE'),
+  ('pygments.styles.gh_dark',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\gh_dark.py',
+   'PYMODULE'),
+  ('pygments.styles.gruvbox',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\gruvbox.py',
+   'PYMODULE'),
+  ('pygments.styles.igor',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\igor.py',
+   'PYMODULE'),
+  ('pygments.styles.inkpot',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\inkpot.py',
+   'PYMODULE'),
+  ('pygments.styles.lightbulb',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\lightbulb.py',
+   'PYMODULE'),
+  ('pygments.styles.lilypond',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\lilypond.py',
+   'PYMODULE'),
+  ('pygments.styles.lovelace',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\lovelace.py',
+   'PYMODULE'),
+  ('pygments.styles.manni',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\manni.py',
+   'PYMODULE'),
+  ('pygments.styles.material',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\material.py',
+   'PYMODULE'),
+  ('pygments.styles.monokai',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\monokai.py',
+   'PYMODULE'),
+  ('pygments.styles.murphy',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\murphy.py',
+   'PYMODULE'),
+  ('pygments.styles.native',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\native.py',
+   'PYMODULE'),
+  ('pygments.styles.nord',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\nord.py',
+   'PYMODULE'),
+  ('pygments.styles.onedark',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\onedark.py',
+   'PYMODULE'),
+  ('pygments.styles.paraiso_dark',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\paraiso_dark.py',
+   'PYMODULE'),
+  ('pygments.styles.paraiso_light',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\paraiso_light.py',
+   'PYMODULE'),
+  ('pygments.styles.pastie',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\pastie.py',
+   'PYMODULE'),
+  ('pygments.styles.perldoc',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\perldoc.py',
+   'PYMODULE'),
+  ('pygments.styles.rainbow_dash',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\rainbow_dash.py',
+   'PYMODULE'),
+  ('pygments.styles.rrt',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\rrt.py',
+   'PYMODULE'),
+  ('pygments.styles.sas',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\sas.py',
+   'PYMODULE'),
+  ('pygments.styles.solarized',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\solarized.py',
+   'PYMODULE'),
+  ('pygments.styles.staroffice',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\staroffice.py',
+   'PYMODULE'),
+  ('pygments.styles.stata_dark',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\stata_dark.py',
+   'PYMODULE'),
+  ('pygments.styles.stata_light',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\stata_light.py',
+   'PYMODULE'),
+  ('pygments.styles.tango',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\tango.py',
+   'PYMODULE'),
+  ('pygments.styles.trac',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\trac.py',
+   'PYMODULE'),
+  ('pygments.styles.vim',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\vim.py',
+   'PYMODULE'),
+  ('pygments.styles.vs',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\vs.py',
+   'PYMODULE'),
+  ('pygments.styles.xcode',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\xcode.py',
+   'PYMODULE'),
+  ('pygments.styles.zenburn',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\styles\\zenburn.py',
+   'PYMODULE'),
+  ('pygments.token',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\token.py',
+   'PYMODULE'),
+  ('pygments.unistring',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\unistring.py',
+   'PYMODULE'),
+  ('pygments.util',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pygments\\util.py',
+   'PYMODULE'),
+  ('queue',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\queue.py',
+   'PYMODULE'),
+  ('quopri',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\quopri.py',
+   'PYMODULE'),
+  ('random',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\random.py',
+   'PYMODULE'),
+  ('requests',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\requests\\__init__.py',
+   'PYMODULE'),
+  ('requests.__version__',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\requests\\__version__.py',
+   'PYMODULE'),
+  ('requests._internal_utils',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\requests\\_internal_utils.py',
+   'PYMODULE'),
+  ('requests.adapters',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\requests\\adapters.py',
+   'PYMODULE'),
+  ('requests.api',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\requests\\api.py',
+   'PYMODULE'),
+  ('requests.auth',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\requests\\auth.py',
+   'PYMODULE'),
+  ('requests.certs',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\requests\\certs.py',
+   'PYMODULE'),
+  ('requests.compat',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\requests\\compat.py',
+   'PYMODULE'),
+  ('requests.cookies',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\requests\\cookies.py',
+   'PYMODULE'),
+  ('requests.exceptions',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\requests\\exceptions.py',
+   'PYMODULE'),
+  ('requests.hooks',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\requests\\hooks.py',
+   'PYMODULE'),
+  ('requests.models',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\requests\\models.py',
+   'PYMODULE'),
+  ('requests.packages',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\requests\\packages.py',
+   'PYMODULE'),
+  ('requests.sessions',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\requests\\sessions.py',
+   'PYMODULE'),
+  ('requests.status_codes',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\requests\\status_codes.py',
+   'PYMODULE'),
+  ('requests.structures',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\requests\\structures.py',
+   'PYMODULE'),
+  ('requests.utils',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\requests\\utils.py',
+   'PYMODULE'),
+  ('runpy',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\runpy.py',
+   'PYMODULE'),
+  ('safety',
+   'Y:\\Hackathan\\shellmind-ai-terminal\\safety\\__init__.py',
+   'PYMODULE'),
+  ('safety.danger_patterns',
+   'Y:\\Hackathan\\shellmind-ai-terminal\\safety\\danger_patterns.py',
+   'PYMODULE'),
+  ('safety.guard',
+   'Y:\\Hackathan\\shellmind-ai-terminal\\safety\\guard.py',
+   'PYMODULE'),
+  ('secrets',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\secrets.py',
+   'PYMODULE'),
+  ('selectors',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\selectors.py',
+   'PYMODULE'),
+  ('services',
+   'Y:\\Hackathan\\shellmind-ai-terminal\\services\\__init__.py',
+   'PYMODULE'),
+  ('services.command_service',
+   'Y:\\Hackathan\\shellmind-ai-terminal\\services\\command_service.py',
+   'PYMODULE'),
+  ('shlex',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\shlex.py',
+   'PYMODULE'),
+  ('shutil',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\shutil.py',
+   'PYMODULE'),
+  ('signal',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\signal.py',
+   'PYMODULE'),
+  ('socket',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\socket.py',
+   'PYMODULE'),
+  ('socketserver',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\socketserver.py',
+   'PYMODULE'),
+  ('ssl',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ssl.py',
+   'PYMODULE'),
+  ('statistics',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\statistics.py',
+   'PYMODULE'),
+  ('string',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\string.py',
+   'PYMODULE'),
+  ('stringprep',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\stringprep.py',
+   'PYMODULE'),
+  ('subprocess',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\subprocess.py',
+   'PYMODULE'),
+  ('sysconfig',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\sysconfig.py',
+   'PYMODULE'),
+  ('tarfile',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\tarfile.py',
+   'PYMODULE'),
+  ('tempfile',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\tempfile.py',
+   'PYMODULE'),
+  ('textwrap',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\textwrap.py',
+   'PYMODULE'),
+  ('threading',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\threading.py',
+   'PYMODULE'),
+  ('tkinter',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\tkinter\\__init__.py',
+   'PYMODULE'),
+  ('tkinter.constants',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\tkinter\\constants.py',
+   'PYMODULE'),
+  ('tkinter.scrolledtext',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\tkinter\\scrolledtext.py',
+   'PYMODULE'),
+  ('tkinter.ttk',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\tkinter\\ttk.py',
+   'PYMODULE'),
+  ('token',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\token.py',
+   'PYMODULE'),
+  ('tokenize',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\tokenize.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('tty',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\tty.py',
+   'PYMODULE'),
+  ('typing',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\typing.py',
+   'PYMODULE'),
+  ('typing_extensions',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\typing_extensions.py',
+   'PYMODULE'),
+  ('ui', 'Y:\\Hackathan\\shellmind-ai-terminal\\ui\\__init__.py', 'PYMODULE'),
+  ('ui.banner',
+   'Y:\\Hackathan\\shellmind-ai-terminal\\ui\\banner.py',
+   'PYMODULE'),
+  ('ui.gui', 'Y:\\Hackathan\\shellmind-ai-terminal\\ui\\gui.py', 'PYMODULE'),
+  ('urllib',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\urllib\\__init__.py',
+   'PYMODULE'),
+  ('urllib.error',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\urllib\\error.py',
+   'PYMODULE'),
+  ('urllib.parse',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\urllib\\parse.py',
+   'PYMODULE'),
+  ('urllib.request',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\urllib\\request.py',
+   'PYMODULE'),
+  ('urllib.response',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\urllib\\response.py',
+   'PYMODULE'),
+  ('urllib3',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\__init__.py',
+   'PYMODULE'),
+  ('urllib3._base_connection',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\_base_connection.py',
+   'PYMODULE'),
+  ('urllib3._collections',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\_collections.py',
+   'PYMODULE'),
+  ('urllib3._request_methods',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\_request_methods.py',
+   'PYMODULE'),
+  ('urllib3._version',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\_version.py',
+   'PYMODULE'),
+  ('urllib3.connection',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\connection.py',
+   'PYMODULE'),
+  ('urllib3.connectionpool',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\connectionpool.py',
+   'PYMODULE'),
+  ('urllib3.contrib',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\contrib\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten.connection',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\connection.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten.fetch',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\fetch.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten.request',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\request.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten.response',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\response.py',
+   'PYMODULE'),
+  ('urllib3.contrib.pyopenssl',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\contrib\\pyopenssl.py',
+   'PYMODULE'),
+  ('urllib3.contrib.socks',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\contrib\\socks.py',
+   'PYMODULE'),
+  ('urllib3.exceptions',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\exceptions.py',
+   'PYMODULE'),
+  ('urllib3.fields',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\fields.py',
+   'PYMODULE'),
+  ('urllib3.filepost',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\filepost.py',
+   'PYMODULE'),
+  ('urllib3.http2',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\http2\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.http2.connection',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\http2\\connection.py',
+   'PYMODULE'),
+  ('urllib3.http2.probe',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\http2\\probe.py',
+   'PYMODULE'),
+  ('urllib3.poolmanager',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\poolmanager.py',
+   'PYMODULE'),
+  ('urllib3.response',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\response.py',
+   'PYMODULE'),
+  ('urllib3.util',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\util\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.util.connection',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\util\\connection.py',
+   'PYMODULE'),
+  ('urllib3.util.proxy',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\util\\proxy.py',
+   'PYMODULE'),
+  ('urllib3.util.request',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\util\\request.py',
+   'PYMODULE'),
+  ('urllib3.util.response',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\util\\response.py',
+   'PYMODULE'),
+  ('urllib3.util.retry',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\util\\retry.py',
+   'PYMODULE'),
+  ('urllib3.util.ssl_',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\util\\ssl_.py',
+   'PYMODULE'),
+  ('urllib3.util.ssl_match_hostname',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\util\\ssl_match_hostname.py',
+   'PYMODULE'),
+  ('urllib3.util.ssltransport',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\util\\ssltransport.py',
+   'PYMODULE'),
+  ('urllib3.util.timeout',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\util\\timeout.py',
+   'PYMODULE'),
+  ('urllib3.util.url',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\util\\url.py',
+   'PYMODULE'),
+  ('urllib3.util.util',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\util\\util.py',
+   'PYMODULE'),
+  ('urllib3.util.wait',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\urllib3\\util\\wait.py',
+   'PYMODULE'),
+  ('wcwidth',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\wcwidth\\__init__.py',
+   'PYMODULE'),
+  ('wcwidth.bisearch',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\wcwidth\\bisearch.py',
+   'PYMODULE'),
+  ('wcwidth.control_codes',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\wcwidth\\control_codes.py',
+   'PYMODULE'),
+  ('wcwidth.escape_sequences',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\wcwidth\\escape_sequences.py',
+   'PYMODULE'),
+  ('wcwidth.grapheme',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\wcwidth\\grapheme.py',
+   'PYMODULE'),
+  ('wcwidth.sgr_state',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\wcwidth\\sgr_state.py',
+   'PYMODULE'),
+  ('wcwidth.table_ambiguous',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\wcwidth\\table_ambiguous.py',
+   'PYMODULE'),
+  ('wcwidth.table_grapheme',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\wcwidth\\table_grapheme.py',
+   'PYMODULE'),
+  ('wcwidth.table_mc',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\wcwidth\\table_mc.py',
+   'PYMODULE'),
+  ('wcwidth.table_vs16',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\wcwidth\\table_vs16.py',
+   'PYMODULE'),
+  ('wcwidth.table_wide',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\wcwidth\\table_wide.py',
+   'PYMODULE'),
+  ('wcwidth.table_zero',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\wcwidth\\table_zero.py',
+   'PYMODULE'),
+  ('wcwidth.textwrap',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\wcwidth\\textwrap.py',
+   'PYMODULE'),
+  ('wcwidth.unicode_versions',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\wcwidth\\unicode_versions.py',
+   'PYMODULE'),
+  ('wcwidth.wcwidth',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\wcwidth\\wcwidth.py',
+   'PYMODULE'),
+  ('webbrowser',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\webbrowser.py',
+   'PYMODULE'),
+  ('xml',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\__init__.py',
+   'PYMODULE'),
+  ('xml.dom',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\dom\\__init__.py',
+   'PYMODULE'),
+  ('xml.dom.NodeFilter',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\dom\\NodeFilter.py',
+   'PYMODULE'),
+  ('xml.dom.domreg',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\dom\\domreg.py',
+   'PYMODULE'),
+  ('xml.dom.expatbuilder',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\dom\\expatbuilder.py',
+   'PYMODULE'),
+  ('xml.dom.minicompat',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\dom\\minicompat.py',
+   'PYMODULE'),
+  ('xml.dom.minidom',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\dom\\minidom.py',
+   'PYMODULE'),
+  ('xml.dom.pulldom',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\dom\\pulldom.py',
+   'PYMODULE'),
+  ('xml.dom.xmlbuilder',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\dom\\xmlbuilder.py',
+   'PYMODULE'),
+  ('xml.parsers',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\parsers\\__init__.py',
+   'PYMODULE'),
+  ('xml.parsers.expat',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\parsers\\expat.py',
+   'PYMODULE'),
+  ('xml.sax',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\sax\\__init__.py',
+   'PYMODULE'),
+  ('xml.sax._exceptions',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\sax\\_exceptions.py',
+   'PYMODULE'),
+  ('xml.sax.expatreader',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\sax\\expatreader.py',
+   'PYMODULE'),
+  ('xml.sax.handler',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\sax\\handler.py',
+   'PYMODULE'),
+  ('xml.sax.saxutils',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\sax\\saxutils.py',
+   'PYMODULE'),
+  ('xml.sax.xmlreader',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\sax\\xmlreader.py',
+   'PYMODULE'),
+  ('xmlrpc',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xmlrpc\\__init__.py',
+   'PYMODULE'),
+  ('xmlrpc.client',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xmlrpc\\client.py',
+   'PYMODULE'),
+  ('zipfile',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\zipfile.py',
+   'PYMODULE'),
+  ('zipimport',
+   'C:\\Users\\Vishwanath '
+   'Hubballi\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\zipimport.py',
+   'PYMODULE')])
