@@ -8,6 +8,7 @@ Instead of remembering complex terminal commands, you can simply type:
 ai: find all python files
 ai: delete temporary files
 ai: explain docker
+
 ```
 
 The AI understands your intent, generates the correct command, checks for safety, and executes it.
