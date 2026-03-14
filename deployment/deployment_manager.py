@@ -1,0 +1,459 @@
+from .project_detector import ProjectAnalyzer
+from .dockerfile_generator import DockerfileGenerator
+from .docker_manager import DockerEngine
+from .kube_yaml_generator import KubeYamlGenerator
+from .kubernetes_manager import KubernetesEngine
+from .deploy_engine import DeployEngine
+from .destroy_engine import DestroyEngine
+from .state_manager import StateManager
+from .ui_renderer import UIRenderer
+
+class DeploymentManager:
+    """Main deployment manager that orchestrates deployment operations"""
+
+    def __init__(self):
+        self.project_analyzer = ProjectAnalyzer()
+        self.dockerfile_generator = DockerfileGenerator()
+        self.docker_engine = DockerEngine()
+        self.kube_yaml_generator = KubeYamlGenerator()
+        self.k8s_engine = KubernetesEngine()
+        self.deploy_engine = DeployEngine()
+        self.destroy_engine = DestroyEngine()
+        self.state_manager = StateManager()
+        self.ui = UIRenderer()
+
+    def deploy_docker(self, project_path=".", image_name="myapp"):
+        """Deploy using Docker"""
+        output = []
+
+        # Detect project
+        output.append("Detecting project...")
+        project_info = self.project_analyzer.get_project_info(project_path)
+        framework = project_info["framework"]
+        output.append(f"Framework: {framework}")
+
+        # Generate Dockerfile if not exists
+        if not project_info["has_dockerfile"]:
+            output.append("\nGenerating Dockerfile...")
+            dockerfile_path = self.dockerfile_generator.generate_dockerfile(project_info, project_path)
+            output.append(f"Dockerfile created: {dockerfile_path}")
+        else:
+            output.append("\nUsing existing Dockerfile...")
+
+        # Build Docker image
+        output.append("\nBuilding Docker image...")
+        build_result = self.docker_engine.build_image_legacy(project_path, image_name)
+        output.append(build_result)
+
+        if "❌" in build_result:
+            return "\n".join(output)
+
+        # Detect port
+        port = self.docker_engine.detect_port(project_info)
+
+        # Run container
+        output.append("\nRunning container...")
+        run_result = self.docker_engine.run_container(image_name, port)
+        output.append(run_result)
+
+        if "❌" in run_result:
+            return "\n".join(output)
+
+        # Print access URL
+        output.append("\nApp running:")
+        output.append(f"http://localhost:{port}")
+
+        return "\n".join(output)
+
+    def deploy(self, project_path=".", target="docker", **kwargs):
+        """Main deploy method supporting multiple targets"""
+
+        # Analyze project
+        self.ui.show_info("Analyzing project...")
+        project_config = self.analyze_project(project_path)
+
+        if target == "docker":
+            return self.deploy_docker_compose(project_config, **kwargs)
+        elif target == "kubernetes":
+            return self.deploy_kubernetes_full(project_config, **kwargs)
+        elif target == "cloud":
+            return self.deploy_cloud_full(project_config, **kwargs)
+        else:
+            return self.deploy_docker_simple(project_path, **kwargs)
+
+    def analyze_project(self, project_path):
+        """Analyze project and create deployment config"""
+        analysis = self.project_analyzer.analyze(project_path)
+
+        # Create service configs
+        services = []
+        if analysis['services']:
+            for service_name in analysis['services']:
+                service = {
+                    'name': service_name,
+                    'port': analysis['ports'][0] if analysis['ports'] else 8000,
+                    'type': 'api',  # Default
+                    'env_vars': analysis['env_vars'],
+                    'replicas': 1,
+                    'image': f"{service_name}:latest",
+                    'build_path': '.'
+                }
+                services.append(service)
+        else:
+            # Single service
+            services = [{
+                'name': 'app',
+                'port': analysis['ports'][0] if analysis['ports'] else 8000,
+                'type': 'api',
+                'env_vars': analysis['env_vars'],
+                'replicas': 1,
+                'image': 'app:latest',
+                'build_path': '.'
+            }]
+
+        config = {
+            'name': 'myproject',  # TODO: detect from project
+            'path': project_path,
+            'frameworks': analysis['frameworks'],
+            'services': services,
+            'databases': analysis['databases'],
+            'architecture': analysis['architecture']
+        }
+
+        return config
+
+    def deploy_docker_simple(self, project_path=".", image_name="myapp"):
+        """Simple Docker deployment (legacy)"""
+        output = []
+
+        # Detect project
+        output.append("Detecting project...")
+        project_info = self.project_analyzer.get_project_info(project_path)
+        framework = project_info["framework"]
+        output.append(f"Framework: {framework}")
+
+        # Generate Dockerfile if not exists
+        if not project_info["has_dockerfile"]:
+            output.append("\nGenerating Dockerfile...")
+            dockerfile_path = self.dockerfile_generator.generate_dockerfile(project_info, project_path)
+            output.append(f"Dockerfile created: {dockerfile_path}")
+        else:
+            output.append("\nUsing existing Dockerfile...")
+
+        # Build Docker image
+        output.append("\nBuilding Docker image...")
+        build_result = self.docker_engine.build_image_legacy(project_path, image_name)
+        output.append(build_result)
+
+        if "❌" in build_result:
+            return "\n".join(output)
+
+        # Detect port
+        port = self.docker_engine.detect_port(project_info)
+
+        # Run container
+        output.append("\nRunning container...")
+        run_result = self.docker_engine.run_container(image_name, port)
+        output.append(run_result)
+
+        if "❌" in run_result:
+            return "\n".join(output)
+
+        # Print access URL
+        output.append("\nApp running:")
+        output.append(f"http://localhost:{port}")
+
+        return "\n".join(output)
+
+    def deploy_docker_compose(self, project_config, **kwargs):
+        """Complete Docker DevOps pipeline"""
+        import subprocess
+        import os
+        output = []
+
+        try:
+            # Step 1: Generate Dockerfile
+            output.append("[INFO] Analyzing project structure...")
+            project_path = project_config.get('path', '.')
+            project_info = self.project_analyzer.get_project_info(project_path)
+
+            output.append("[INFO] Generating optimized Dockerfile...")
+            dockerfile_path = self.dockerfile_generator.generate_dockerfile(project_info, project_path)
+            output.append(f"   [OK] Dockerfile created: {dockerfile_path}")
+
+            # Step 2: Build Docker image
+            output.append("\n[BUILD] Building Docker image...")
+            image_name = f"{project_config['name'].lower()}:latest"
+            build_result = self.docker_engine.build_image_legacy(project_path, image_name)
+            output.append(f"   {build_result}")
+
+            if "[ERROR]" in build_result:
+                return "\n".join(output)
+
+            # Step 3: Detect correct port from framework
+            framework = project_info.get("framework", "python").lower()
+            port_map = {
+                "fastapi": 8000, "flask": 5000, "django": 8000,
+                "streamlit": 8501, "react": 80, "nextjs": 3000,
+                "nodejs": 3000, "node": 3000,
+                "java-gradle": 8080, "java-maven": 8080,
+                "go": 8080, "rust": 8080, "dotnet": 8080,
+                "ruby": 3000, "rails": 3000, "php": 80,
+            }
+            port = port_map.get(framework, 8000)
+            # Also check what port the services list says
+            if project_config.get('services'):
+                svc_port = project_config['services'][0].get('port', 0)
+                if svc_port and svc_port != 8000:
+                    port = svc_port
+
+            output.append(f"\n[CONFIG] Framework: {framework}  Port: {port}")
+
+            # Step 4: Write a correct docker-compose.yml directly
+            # (uses image: not build: so the already-built image is used)
+            compose_content = (
+                "version: \"3.9\"\n\n"
+                "services:\n"
+                "  {svc}:\n"
+                "    image: {image}\n"
+                "    container_name: {svc}-container\n"
+                "    restart: unless-stopped\n"
+                "    ports:\n"
+                "      - \"{port}:{port}\"\n"
+                "    logging:\n"
+                "      driver: json-file\n"
+                "      options:\n"
+                "        max-size: \"10m\"\n"
+                "        max-file: \"3\"\n\n"
+                "networks:\n"
+                "  default:\n"
+                "    name: {svc}-network\n"
+            ).format(
+                svc=project_config['name'].lower(),
+                image=image_name,
+                port=port,
+            )
+
+            compose_path = os.path.join(project_path, 'docker-compose.yml')
+            with open(compose_path, 'w', encoding='utf-8') as f:
+                f.write(compose_content)
+            output.append("   [OK] Docker Compose file created")
+
+            # Step 5: Run docker compose
+            output.append("\n[DEPLOY] Starting services with Docker Compose...")
+
+            # Try modern `docker compose` first, fall back to `docker-compose`
+            for cmd in [['docker', 'compose', 'up', '-d', '--remove-orphans'],
+                        ['docker-compose', 'up', '-d']]:
+                result = subprocess.run(cmd, capture_output=True, text=True, cwd=project_path)
+                if result.returncode == 0:
+                    break
+
+            if result.returncode == 0:
+                output.append("   [OK] Services deployed successfully")
+                output.append("   [SUMMARY] Deployment Summary:")
+                output.append(f"      * Image: {image_name}")
+                output.append(f"      * Framework: {framework}")
+                output.append(f"      * Port: {port}")
+                output.append("      * Status: Running")
+            else:
+                output.append(f"   [ERROR] Failed to start services: {result.stderr}")
+                return "\n".join(output)
+
+            # Step 6: Show access URLs
+            output.append("\n[ACCESS] Access URLs:")
+            for service in project_config['services']:
+                port = port  # use corrected port
+                output.append(f"   * {service['name']}: http://localhost:{port}")
+
+            output.append("\n[SUCCESS] Docker deployment pipeline completed successfully!")
+
+        except Exception as e:
+            output.append(f"\n[ERROR] Deployment failed: {e}")
+            import traceback
+            output.append(traceback.format_exc())
+
+        return "\n".join(output)
+
+    def deploy_kubernetes_full(self, project_config, **kwargs):
+        """Complete Kubernetes DevOps pipeline"""
+        output = []
+
+        try:
+            # Step 1: Generate Dockerfile (always create/overwrite)
+            output.append("[INFO] Analyzing project structure...")
+            project_path = project_config.get('path', '.')
+            project_info = self.project_analyzer.get_project_info(project_path)
+
+            output.append("[INFO] Generating optimized Dockerfile...")
+            dockerfile_path = self.dockerfile_generator.generate_dockerfile(project_info, project_path)
+            output.append(f"   [OK] Dockerfile created: {dockerfile_path}")
+
+            # Step 2: Build Docker image
+            output.append("\n[BUILD] Building Docker image...")
+            image_name = f"{project_config['name'].lower()}:latest"
+            build_result = self.docker_engine.build_image_legacy(project_path, image_name)
+            output.append(f"   {build_result}")
+
+            if "[ERROR]" in build_result:
+                return "\n".join(output)
+
+            # Step 3: Push to Docker Hub (required for K8s)
+            output.append("\n[PUSH] Publishing to Docker Hub...")
+            try:
+                # Try to push with a default registry name
+                registry_name = f"your-registry/{project_config['name'].lower()}"
+                push_result = self.docker_engine.push_image(image_name, registry_name)
+                output.append(f"   {push_result}")
+                full_image_name = f"{registry_name}:latest"
+            except Exception as e:
+                output.append(f"   [WARN] Docker Hub push skipped (registry not configured): {e}")
+                full_image_name = image_name
+
+            # Step 4: Generate Kubernetes YAML files
+            output.append("\n[CONFIG] Generating Kubernetes manifests...")
+            port = project_config['services'][0]['port'] if project_config['services'] else 8000
+            replicas = 3  # Default for K8s
+            yaml_path = self.kube_yaml_generator.generate_deployment_yaml(full_image_name, port, replicas, project_path)
+            output.append(f"   [OK] Kubernetes YAML files created: {yaml_path}")
+
+            # Step 5: Apply Kubernetes deployment
+            output.append("\n[DEPLOY] Applying Kubernetes deployment...")
+            apply_result = self.k8s_engine.apply_deployment(yaml_path)
+            output.append(f"   {apply_result}")
+
+            if "❌" in apply_result:
+                return "\n".join(output)
+
+            # Step 6: Wait for pods to be ready
+            output.append("\n[WAIT] Waiting for pods to be ready...")
+            wait_result = self.k8s_engine.wait_for_pods_ready()
+            output.append(f"   {wait_result}")
+
+            # Step 7: Get deployment status
+            output.append("\n[STATUS] Checking deployment status...")
+            pod_status = self.k8s_engine.get_pods_status()
+            output.append(f"   {pod_status}")
+
+            # Step 8: Get service URL
+            service_url = self.k8s_engine.get_service_url()
+            output.append(f"   {service_url}")
+
+            # Step 9: Show access information
+            output.append("\n[ACCESS] Access Information:")
+            output.append(f"   * Service URL: {service_url}")
+            output.append(f"   * Image: {full_image_name}")
+            output.append(f"   * Replicas: {replicas}")
+            output.append(f"   * Port: {port}")
+
+            output.append("\n[SUCCESS] Kubernetes deployment pipeline completed successfully!")
+
+        except Exception as e:
+            output.append(f"\n[ERROR] Deployment failed: {e}")
+            import traceback
+            output.append(traceback.format_exc())
+
+        return "\n".join(output)
+
+    def deploy_cloud_full(self, project_config, cloud_provider='aws'):
+        """Full cloud deployment"""
+        return self.deploy_engine.deploy(project_config, cloud_provider)
+
+    def destroy(self, project_name=None, force=False, **kwargs):
+        """Main destroy method"""
+
+        if not project_name:
+            # Try to get from current deployments
+            deployments = self.state_manager.list_deployments()
+            if deployments:
+                project_name = deployments[0]['project']
+            else:
+                return "No deployments found to destroy"
+
+        return self.destroy_engine.destroy(project_name, force)
+
+    def deploy_kubernetes(self, project_path=".", image_name="myapp", registry=""):
+        """Deploy to Kubernetes"""
+        output = []
+
+        # Build Docker image
+        output.append("Building Docker image...")
+        build_result = self.docker_engine.build_image_legacy(project_path, image_name)
+        output.append(build_result)
+
+        if "❌" in build_result:
+            return "\n".join(output)
+
+        # Push image if registry specified
+        if registry:
+            output.append("\nPushing image to registry...")
+            push_result = self.docker_engine.push_image(image_name, registry)
+            output.append(push_result)
+            full_image_name = f"{registry}/{image_name}"
+        else:
+            full_image_name = image_name
+
+        # Generate Kubernetes YAML
+        output.append("\nGenerating Kubernetes YAML...")
+        port = 8000  # Default for K8s
+        yaml_path = self.kube_yaml_generator.generate_deployment_yaml(full_image_name, port, 3, project_path)
+        output.append(f"YAML files created: {yaml_path}")
+
+        # Apply deployment
+        output.append("\nApplying Kubernetes deployment...")
+        apply_result = self.k8s_engine.apply_deployment(yaml_path)
+        output.append(apply_result)
+
+        if "❌" in apply_result:
+            return "\n".join(output)
+
+        # Wait for pods
+        output.append("\nWaiting for pods to be ready...")
+        wait_result = self.k8s_engine.wait_for_pods_ready()
+        output.append(wait_result)
+
+        # Get pod status
+        pod_status = self.k8s_engine.get_pods_status()
+        output.append(pod_status)
+
+        # Get service URL
+        service_url = self.k8s_engine.get_service_url()
+        output.append(f"Service: {service_url}")
+
+        return "\n".join(output)
+
+    def destroy_docker(self, image_name="myapp"):
+        """Destroy Docker deployment"""
+        output = []
+
+        # Stop container
+        output.append("Stopping container...")
+        stop_result = self.docker_engine.stop_container()
+        output.append(stop_result)
+
+        # Remove image
+        output.append("\nRemoving image...")
+        remove_result = self.docker_engine.remove_image(image_name)
+        output.append(remove_result)
+
+        output.append("\nEnvironment cleaned")
+
+        return "\n".join(output)
+
+    def destroy_kubernetes(self):
+        """Destroy Kubernetes deployment"""
+        output = []
+
+        # Delete deployment
+        output.append("Deleting deployment...")
+        delete_dep_result = self.k8s_engine.delete_deployment()
+        output.append(delete_dep_result)
+
+        # Delete service
+        output.append("\nDeleting service...")
+        delete_svc_result = self.k8s_engine.delete_service()
+        output.append(delete_svc_result)
+
+        output.append("\nCluster resources cleaned")
+
+        return "\n".join(output)

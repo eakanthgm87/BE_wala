@@ -1,0 +1,15 @@
+networks:
+  app-network:
+    driver: bridge
+services:
+  app:
+    build: .
+    depends_on: []
+    environment: {}
+    networks:
+    - app-network
+    ports:
+    - 8000:8000
+    restart: unless-stopped
+version: '3.8'
+volumes: {}

@@ -1,0 +1,328 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+
+<style>
+:root {
+    --dark-green: #064a28;
+    --accent: #0b6e4f;
+    --glass-bg: rgba(255,255,255,0.45);
+    --glass-bg-strong: rgba(255,255,255,0.70);
+    --blur: blur(12px);
+    --radius: 22px;
+    --shadow: 0 12px 32px rgba(0,0,0,0.18);
+}
+
+/* ==========================
+   FULL BACKGROUND SLIDESHOW
+========================== */
+.bg-slideshow {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.bg-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1.0s ease-in-out;
+}
+
+.bg-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FIRST slide shows IMMEDIATELY (no glossy, no delay) */
+.bg-slide.initial {
+    opacity: 1 !important;
+}
+
+/* Soft dim for readability */
+.bg-dim {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.15);
+}
+
+/* ==========================
+   REMOVE GLOSSY COVER ENTIRELY
+========================== */
+.glass-cover {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background: transparent !important;
+    backdrop-filter: none !important;
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+.container-buy {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin: 40px auto;
+}
+
+/* ==========================
+   PAGE TITLE
+========================== */
+.page-title {
+    text-align: center;
+    font-size: 46px;
+    font-weight: 800;
+    color: var(--dark-green);
+    margin-bottom: 25px;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* ==========================
+   FILTERS
+========================== */
+.filters-box {
+    width: 92%;
+    margin: auto;
+    background: var(--glass-bg);
+    backdrop-filter: var(--blur);
+    padding: 24px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.filters-box input,
+.filters-box select {
+    background: var(--glass-bg-strong);
+    border: none;
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    font-size: 15px;
+    min-width: 240px;
+    box-shadow: inset 2px 2px 7px rgba(0,0,0,0.1),
+                inset -3px -3px 7px rgba(255,255,255,0.45);
+}
+
+.filters-box button {
+    background: linear-gradient(135deg, #2e7d32, #1b5e20);
+    padding: 14px 20px;
+    border-radius: var(--radius);
+    border: none;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,100,50,0.15);
+}
+
+.filters-box button:hover {
+    transform: translateY(-3px);
+}
+
+/* ==========================
+   LISTING GRID
+========================== */
+.listings-grid {
+    width: 92%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 28px;
+}
+
+/* ==========================
+   PEBBLE CARD
+========================== */
+.card {
+    background: rgba(255,255,255,0.65);
+    backdrop-filter: blur(10px);
+    border-radius: 26px;
+    padding: 22px;
+    text-align: center;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.18),
+                inset 4px 4px 12px rgba(255,255,255,0.55),
+                inset -4px -4px 12px rgba(0,0,0,0.08);
+    transition: 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+.card img {
+    width: 190px;
+    height: 190px;
+    border-radius: 18px;
+    object-fit: cover;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.22);
+}
+
+.card h3 {
+    margin-top: 12px;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--dark-green);
+}
+
+.card p {
+    margin: 4px 0;
+    color: #1d6b3f;
+}
+
+.card a {
+    color: var(--accent);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+</style>
+
+
+<!-- ==========================
+     BACKGROUND SLIDESHOW
+========================== -->
+<div class="bg-slideshow">
+    <div class="bg-dim"></div>
+</div>
+
+<div class="glass-cover"></div>
+
+<!-- ==========================
+     CONTENT
+========================== -->
+<div class="container-buy">
+
+    <h2 class="page-title">🛒 {% trans "Buy Fresh Crops" %}</h2>
+
+    <!-- FILTERS -->
+    <div class="filters-box">
+        <input id="filterCrop" placeholder="{% trans 'Search crop name...' %}">
+        <select id="filterRegion">
+            <option value="">{% trans "All Regions" %}</option>
+            <option value="North">{% trans "North" %}</option>
+            <option value="South">{% trans "South" %}</option>
+            <option value="East">{% trans "East" %}</option>
+            <option value="West">{% trans "West" %}</option>
+            <option value="Central">{% trans "Central" %}</option>
+        </select>
+
+        <input id="filterMin" type="number" placeholder="{% trans 'Min Price' %}">
+        <input id="filterMax" type="number" placeholder="{% trans 'Max Price' %}">
+        <input id="filterDate" type="date">
+
+        <button onclick="applyFilters()">{% trans "Apply Filters" %}</button>
+    </div>
+
+    <!-- LISTINGS -->
+    <div class="listings-grid">
+        {% for l in listings %}
+        <div class="card"
+             data-crop="{{ l.crop.name }}"
+             data-region="{{ l.seller.profile.region|default:'unknown' }}"
+             data-price="{{ l.price_per_unit }}"
+             data-date="{{ l.created_at|date:'Y-m-d' }}">
+
+            {% if l.images.first %}
+                <img src="{{ l.images.first.image.url }}">
+            {% else %}
+                <img src="{% static 'img/placeholder.png' %}">
+            {% endif %}
+
+            <h3>{{ l.crop.name }}</h3>
+            <p>💰 {% trans "Price" %}: ₹{{ l.price_per_unit }}</p>
+            <p>📦 {% trans "Base Price" %}: ₹{{ l.base_price }}</p>
+            <p>👨‍🌾 {% trans "Farmer" %}: {{ l.seller.username }}</p>
+            <p>🌍 {% trans "Region" %}: {{ l.seller.profile.region|default:"-" }}</p>
+            <p>📅 {{ l.created_at }}</p>
+
+            <a href="/listing/{{ l.id }}/">{% trans "View Details" %}</a>
+        </div>
+        {% empty %}
+        <p style="text-align:center;font-size:20px;color:#155533;">
+            {% trans "No crops available right now." %}
+        </p>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- ==========================
+     SCRIPT
+========================== -->
+<script>
+/* Fresh background images */
+const SLIDES = [
+  "https://images.unsplash.com/photo-1504595403659-9088ce801e29",
+  "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+  "https://images.unsplash.com/photo-1471193945509-9ad0617afabf",
+  "https://images.unsplash.com/photo-1524592094714-0f0654e20314",
+  "https://images.unsplash.com/photo-1511698844756-4ffcbfba2003",
+  "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2",
+  "https://images.unsplash.com/photo-1499529112087-3cb3b73cec95",
+  "https://images.unsplash.com/photo-1488459716781-31db52582fe9"
+];
+
+/* INSTANT LOAD — first slide appears immediately */
+(function loadSlideshow(){
+    const cont = document.querySelector(".bg-slideshow");
+
+    SLIDES.forEach((src, idx) => {
+        let slide = document.createElement("div");
+        slide.className = "bg-slide";
+        if (idx === 0) slide.classList.add("initial");  // visible instantly
+
+        let img = document.createElement("img");
+        img.src = src + "?auto=format&fit=crop&w=2000&q=80";
+
+        slide.appendChild(img);
+        cont.appendChild(slide);
+    });
+
+    const slides = document.querySelectorAll(".bg-slide");
+    let i = 0;
+
+    setInterval(() => {
+        slides[i].classList.remove("show");
+        i = (i + 1) % slides.length;
+        slides[i].classList.add("show");
+    }, 9000);
+})();
+
+/* FILTER FUNCTION */
+function applyFilters() {
+    let crop = document.getElementById("filterCrop").value.toLowerCase();
+    let region = document.getElementById("filterRegion").value.toLowerCase();
+    let min = parseFloat(document.getElementById("filterMin").value);
+    let max = parseFloat(document.getElementById("filterMax").value);
+    let date = document.getElementById("filterDate").value;
+
+    document.querySelectorAll(".card").forEach(card => {
+        let c = card.dataset.crop.toLowerCase();
+        let r = card.dataset.region.toLowerCase();
+        let p = parseFloat(card.dataset.price);
+        let d = card.dataset.date;
+
+        let show = true;
+
+        if (crop && !c.includes(crop)) show = false;
+        if (region && r !== region) show = false;
+        if (min && p < min) show = false;
+        if (max && p > max) show = false;
+        if (date && d !== date) show = false;
+
+        card.style.display = show ? "block" : "none";
+    });
+}
+</script>
+
+{% endblock %}

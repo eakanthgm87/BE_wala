@@ -7,8 +7,7 @@ import os
 class FileSnapshot:
     """Represents a single file's state at a point in time."""
     path: str
-    content: Optional[str] = None  # Text content (UTF-8) when available
-    binary_content: Optional[str] = None  # Base64 when file is binary or non-UTF8
+    content: Optional[str] = None  # None if file too large or binary
     size: int = 0
     mtime: float = 0.0
     is_binary: bool = False

@@ -1,0 +1,304 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+
+<style>
+:root{
+  --bg-gradient: linear-gradient(145deg,#e7ffee,#c4fadc);
+  --glass-bg: rgba(255,255,255,0.55);
+  --accent: #0b6e4f;
+  --dark-green: #064a28;
+  --soft-shadow: 0 12px 26px rgba(0,0,0,0.10);
+  --radius: 28px;
+  --card-radius: 20px;
+}
+
+/* Base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: var(--bg-gradient);
+  overflow-x: hidden;
+}
+
+/* ---- BACKGROUND SLIDESHOW ---- */
+.bg-slideshow {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background: #e8fff0;
+}
+
+.bg-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out, transform 12s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: opacity, transform;
+}
+
+.bg-slide.show { opacity: 1; }
+
+.bg-slide img {
+  height: 100%;
+  width: auto;
+  min-width: 100%;
+  object-fit: cover;
+  object-position: 50% 40%;
+  max-height: 140vh;
+  filter: saturate(1.05) contrast(1.03);
+  transform-origin: center;
+}
+
+/* Dim only */
+.bg-dim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(255,255,255,0.10), rgba(0,0,0,0.08));
+  pointer-events: none;
+}
+
+/* ---- REMOVE GLOSSY COVER (DELETED COMPLETELY) ---- */
+
+/* ---- MAIN CONTENT ---- */
+.container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 36px auto 80px;
+  padding: 0 20px;
+}
+
+/* TITLE */
+.dashboard-title {
+  text-align: center;
+  font-size: 42px;
+  color: var(--dark-green);
+  margin: 26px 0 8px;
+  font-weight: 800;
+}
+
+/* SEARCH */
+.search-row {
+  display:flex;
+  justify-content:center;
+  gap:14px;
+  margin: 18px auto 26px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.search-input {
+  width: 420px;
+  max-width: calc(100% - 160px);
+  padding: 16px 20px;
+  border-radius: 999px;
+  border: none;
+  font-size: 16px;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 8px 20px rgba(6,90,40,0.08),
+              inset 2px 2px 6px rgba(255,255,255,0.6);
+  outline: none;
+  transition: box-shadow .18s ease, transform .12s ease;
+  color: #111;
+}
+
+.search-button {
+  padding: 14px 24px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
+  color: #fff;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 10px 22px rgba(0,80,30,0.15);
+}
+
+.search-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 36px rgba(0,80,30,0.18);
+}
+
+/* PRICE BOX */
+.price-box {
+  margin: 12px auto 28px;
+  max-width: 600px;
+  background: rgba(255,255,255,0.96);
+  border-radius: 20px;
+  padding: 18px 22px;
+  text-align:center;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+  display:none;
+}
+
+.price-big {
+  font-size:28px;
+  font-weight:800;
+  color:var(--accent);
+}
+
+/* LISTINGS */
+.listings {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 26px;
+  margin-top: 8px;
+}
+
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,255,250,0.98));
+  border-radius: var(--card-radius);
+  padding: 22px;
+  text-align:center;
+  box-shadow: 0 18px 44px rgba(0,0,0,0.08);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 26px 56px rgba(6,90,40,0.12);
+}
+
+.card img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 12px;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+}
+
+.card h3 { color: var(--dark-green); font-size:20px; font-weight:800; }
+.card p { color:#2f6d42; margin:6px 0; font-size:14px; }
+.card a { color: var(--accent); font-weight:800; text-decoration:none; }
+.card a:hover { text-decoration: underline; }
+</style>
+
+<!-- ================= Slideshow ================= -->
+<div class="bg-slideshow">
+  <div class="bg-dim"></div>
+</div>
+
+<!-- ================= Main UI ================= -->
+<div class="container">
+
+  <h2 class="dashboard-title">🌱 {% trans "Farmer Dashboard" %}</h2>
+
+  <div class="search-row">
+      <input id="searchCrop" class="search-input" placeholder="{% trans 'Search crop price (e.g., Tomato)' %}">
+      <button class="search-button" id="searchBtn">{% trans "Get Price" %}</button>
+  </div>
+
+  <div id="priceResult" class="price-box">
+      <div id="cropName"></div>
+      <div class="price-big" id="cropPrice"></div>
+      <div id="cropMarket" style="color:#2f6d42;margin-top:6px;"></div>
+  </div>
+
+  <div class="listings">
+    {% for l in listings %}
+      <div class="card">
+        {% if l.images.first %}
+          <img src="{{ l.images.first.image.url }}">
+        {% else %}
+          <img src="{% static 'img/placeholder.png' %}">
+        {% endif %}
+        <h3>{{ l.crop.name }} ({{ l.crop.crop_type }})</h3>
+        <p>💰 {% trans "Price" %}: ₹{{ l.price_per_unit }}</p>
+        <p>📦 {% trans "Base Price" %}: ₹{{ l.base_price }}</p>
+        <p>👨‍🌾 {% trans "Seller" %}: {{ l.seller.username }}</p>
+        <p>📅 {{ l.created_at|date:"M j, Y" }}</p>
+        <p><a href="/listing/{{ l.id }}/">{% trans "View Details" %}</a></p>
+      </div>
+    {% empty %}
+      <p style="text-align:center; font-size:20px; color:#2f6630;">{% trans "No listings available." %}</p>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- ================= Scripts ================= -->
+<script>
+/* Faster-loading slideshow */
+const SLIDES = [
+  "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+  "https://images.unsplash.com/photo-1506806732259-39c2d0268443",
+  "https://images.unsplash.com/photo-1441974231531-c6227db76b6e",
+  "https://images.unsplash.com/photo-1533777324565-a040eb52fac2",
+  "https://images.unsplash.com/photo-1469474968028-56623f02e42e",
+  "https://images.unsplash.com/photo-1500730133988-5f9b0f81d700",
+  "https://images.unsplash.com/photo-1504198453319-5ce911bafcde",
+  "https://images.unsplash.com/photo-1453113886729-2a4d9a7e0d8c"
+];
+
+(function initSlideshow(){
+  const cont = document.querySelector('.bg-slideshow');
+  cont.innerHTML = '<div class="bg-dim"></div>';
+
+  let slides = [];
+
+  SLIDES.forEach(src => {
+    let s = document.createElement("div");
+    s.className = "bg-slide";
+
+    let img = document.createElement("img");
+    img.src = src + "?auto=format&fit=crop&w=2000&q=80";
+    img.decoding = "async";
+
+    s.appendChild(img);
+    cont.appendChild(s);
+    slides.push(s);
+  });
+
+  let i = 0;
+  slides[0].classList.add("show");
+
+  setInterval(() => {
+    slides[i].classList.remove("show");
+    i = (i + 1) % slides.length;
+    slides[i].classList.add("show");
+  }, 10000);
+})();
+
+/* Crop price search */
+async function searchTodayPrice(){
+  const crop = document.getElementById("searchCrop").value.trim();
+  if (!crop) return alert("Enter a crop!");
+
+  document.getElementById("priceResult").style.display = "block";
+  document.getElementById("cropName").innerText = crop;
+  document.getElementById("cropPrice").innerText = "Loading...";
+  document.getElementById("cropMarket").innerText = "";
+
+  try {
+    const res = await fetch(`/api/mandi-price/?crop=${crop}`);
+    const data = await res.json();
+
+    const price = data.modal_price ?? data.price ?? null;
+
+    if (!price) {
+      document.getElementById("cropPrice").innerText = "Price not available";
+      return;
+    }
+
+    document.getElementById("cropPrice").innerText = `₹${price}`;
+    document.getElementById("cropMarket").innerText =
+      data.market ?? "";
+  } catch (e) {
+    document.getElementById("cropPrice").innerText = "Error";
+  }
+}
+
+document.getElementById("searchBtn").onclick = searchTodayPrice;
+</script>
+
+{% endblock %}

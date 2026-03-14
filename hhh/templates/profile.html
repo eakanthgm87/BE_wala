@@ -1,0 +1,362 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<!-- ===============================
+     BACKGROUND SLIDESHOW (FAST)
+================================ -->
+<div class="bg-slideshow">
+    <div class="bg-dim"></div>
+</div>
+
+<style>
+/* General reset */
+/* FORCE NAVBAR TO STAY ON TOP OF SLIDESHOW */
+.nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999 !important;
+    backdrop-filter: blur(18px) !important;
+    background: rgba(255,255,255,0.40) !important;
+}
+
+/* Prevent content from sliding under the navbar */
+body {
+    padding-top: 90px !important;
+}
+
+body {
+    background: transparent !important;
+    font-family: "Poppins", sans-serif;
+    padding-top: 90px !important; /* Keep navbar visible */
+}
+
+/* ===========================================
+   BACKGROUND SLIDESHOW (FAST LOADING)
+=========================================== */
+.bg-slideshow {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.bg-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1.4s ease-in-out;
+}
+
+.bg-slide.show {
+    opacity: 1;
+}
+
+.bg-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.88) contrast(1.03);
+}
+
+/* Dim layer for readability */
+.bg-dim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45));
+    z-index: 2;
+}
+
+/* ===========================================
+   PROFILE CARD (Pebble Premium)
+=========================================== */
+.profile-card {
+    width: 92%;
+    max-width: 880px;
+
+    margin: 40px auto;
+    padding: 35px;
+
+    background: rgba(255,255,255,0.55);
+    border-radius: 26px;
+    backdrop-filter: blur(16px);
+
+    box-shadow:
+        0 20px 55px rgba(0,0,0,0.28),
+        inset 3px 3px 6px rgba(255,255,255,0.45),
+        inset -3px -3px 6px rgba(0,0,0,0.1);
+
+    position: relative;
+    z-index: 5;
+}
+
+.dark-mode .profile-card {
+    background: rgba(20,20,20,0.55) !important;
+    box-shadow:
+        0 20px 55px rgba(0,0,0,0.55),
+        inset 2px 2px 5px rgba(255,255,255,0.1),
+        inset -2px -2px 5px rgba(0,0,0,0.35);
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    color: #145b2e;
+    margin-bottom: 30px;
+}
+
+.dark-mode h2 { color: #d8ffe9 !important; }
+
+/* ===========================================
+   STATS (Pebble Buttons)
+=========================================== */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 22px;
+}
+
+.stat-box {
+    padding: 22px;
+    border-radius: 18px;
+    text-align: center;
+
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(14px);
+    box-shadow:
+        inset 3px 3px 7px rgba(0,0,0,0.1),
+        inset -3px -3px 7px rgba(255,255,255,0.75);
+}
+
+.dark-mode .stat-box {
+    background: rgba(25,25,25,0.68) !important;
+}
+
+.stat-number {
+    font-size: 30px;
+    font-weight: 900;
+    color: #14532d;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #175c34;
+    font-weight: 700;
+}
+
+/* ===========================================
+   SECTION TITLES
+=========================================== */
+.section-title {
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: 800;
+    color: #166534;
+}
+
+.dark-mode .section-title { color: #b9ffd9 !important; }
+
+/* ===========================================
+   LISTING / REQUEST BOXES
+=========================================== */
+.listing-box, .req-box {
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 18px;
+    margin-top: 12px;
+
+    box-shadow:
+        inset 2px 2px 6px rgba(0,0,0,0.1),
+        inset -2px -2px 6px rgba(255,255,255,0.75);
+}
+
+.dark-mode .listing-box,
+.dark-mode .req-box {
+    background: rgba(28,28,28,0.68) !important;
+}
+
+.listing-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #0f4d29;
+}
+
+.row {
+    margin: 6px 0;
+    font-size: 15px;
+    color: #1d4b2e;
+}
+
+/* Accept button */
+.req-box button {
+    padding: 8px 16px;
+    background: #0b6e4f;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+</style>
+
+<!-- ===============================
+     MAIN CONTENT
+================================ -->
+<div class="profile-card">
+
+    <h2>👨‍🌾 {{ request.user.username }} — {% trans "Profile" %}</h2>
+
+    <!-- STATS -->
+    <div class="stats-grid">
+
+        <div class="stat-box">
+            <div class="stat-number">{{ stats.total_listings }}</div>
+            <div class="stat-label">{% trans "Total Listings" %}</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-number">{{ stats.active_listings }}</div>
+            <div class="stat-label">{% trans "Active Listings" %}</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-number">{{ stats.total_requests }}</div>
+            <div class="stat-label">{% trans "Total Buyer Requests" %}</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-number">{{ stats.completed_orders }}</div>
+            <div class="stat-label">{% trans "Completed Orders" %}</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-number">₹{{ stats.highest_bid|default:"0" }}</div>
+            <div class="stat-label">{% trans "Highest Bid" %}</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-number">
+                {% if stats.last_listing %}
+                    {{ stats.last_listing.created_at|date:"d M Y" }}
+                {% else %}
+                    -
+                {% endif %}
+            </div>
+            <div class="stat-label">{% trans "Latest Listing" %}</div>
+        </div>
+
+    </div>
+
+    <!-- YOUR LISTINGS -->
+    <div class="section-title">{% trans "Your Listings" %}</div>
+    {% if listings %}
+        {% for item in listings %}
+            <div class="listing-box">
+                <div class="listing-title">{{ item.crop.name }} ({{ item.crop.crop_type }})</div>
+                <div class="row">💰 {% trans "Price" %}: ₹{{ item.price_per_unit }}</div>
+                <div class="row">📅 {% trans "Posted" %}: {{ item.created_at }}</div>
+                <div class="row">{% trans "Status" %}: {{ item.is_active|yesno:_("Active,Inactive") }}</div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p style="color:#d8ffe9;font-size:15px;">{% trans "You haven't posted any listings yet." %}</p>
+    {% endif %}
+
+    <!-- REQUESTS FROM BUYERS -->
+    <div class="section-title">{% trans "Requests from Buyers" %}</div>
+    {% if buyer_requests %}
+        {% for req in buyer_requests %}
+            <div class="req-box">
+                <div class="row"><strong>{% trans "Listing" %}:</strong> {{ req.listing.crop.name }}</div>
+                <div class="row"><strong>{% trans "Buyer" %}:</strong> {{ req.buyer.username }}</div>
+                <div class="row"><strong>{% trans "Message" %}:</strong> {{ req.message }}</div>
+                <div class="row"><strong>{% trans "Status" %}:</strong> {{ req.status|title }}</div>
+
+                {% if req.status == "pending" %}
+                    <form method="post" action="{% url 'accept_request' req.id %}">
+                        {% csrf_token %}
+                        <button>{% trans "Accept Request" %}</button>
+                    </form>
+                {% endif %}
+            </div>
+        {% endfor %}
+    {% else %}
+        <p style="color:#d8ffe9;font-size:15px;">{% trans "No requests from buyers yet." %}</p>
+    {% endif %}
+
+    <!-- YOUR PURCHASE REQUESTS -->
+    <div class="section-title">{% trans "Your Purchase Requests" %}</div>
+    {% if my_requests %}
+        {% for req in my_requests %}
+            <div class="req-box">
+                <div class="row"><strong>{% trans "Crop" %}:</strong> {{ req.listing.crop.name }}</div>
+                <div class="row"><strong>{% trans "Seller" %}:</strong> {{ req.seller.username }}</div>
+                <div class="row"><strong>{% trans "Status" %}:</strong> {{ req.status|title }}</div>
+
+                {% if req.status == "accepted" %}
+                    <div class="row" style="color:#0b6e4f">
+                        <strong>{% trans "Seller Contact" %}:</strong> {{ req.seller.phone }}
+                    </div>
+                {% else %}
+                    <div class="row">{% trans "Waiting for seller approval…" %}</div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    {% else %}
+        <p style="color:#d8ffe9;font-size:15px;">{% trans "You haven't made any purchase requests." %}</p>
+    {% endif %}
+</div>
+
+<!-- ===============================
+     BACKGROUND SLIDESHOW SCRIPT
+================================ -->
+<script>
+const IMAGES = [
+    "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "https://images.unsplash.com/photo-1506806732259-39c2d0268443",
+    "https://images.unsplash.com/photo-1471193945509-9ad0617afabf",
+    "https://images.unsplash.com/photo-1587049352836-1950e4e62b38",
+    "https://images.unsplash.com/photo-1518976024611-4881f09edcde",
+    "https://images.unsplash.com/photo-1499529112087-3cb3b73cec95",
+    "https://images.unsplash.com/photo-1504595403659-9088ce801e29"
+];
+
+(function startSlideshow() {
+    const container = document.querySelector(".bg-slideshow");
+    container.innerHTML = '<div class="bg-dim"></div>';
+
+    IMAGES.forEach(src => {
+        let slide = document.createElement("div");
+        slide.className = "bg-slide";
+        let img = document.createElement("img");
+
+        img.src = src + "?auto=format&fit=crop&w=2000&q=70";
+        img.loading = "eager";
+
+        slide.appendChild(img);
+        container.appendChild(slide);
+    });
+
+    const slides = document.querySelectorAll(".bg-slide");
+    let index = 0;
+
+    slides[0].querySelector("img").addEventListener("load", () => {
+        slides[0].classList.add("show");
+    });
+
+    setInterval(() => {
+        slides[index].classList.remove("show");
+        index = (index + 1) % slides.length;
+        slides[index].classList.add("show");
+    }, 9000);
+
+})();
+</script>
+
+{% endblock %}

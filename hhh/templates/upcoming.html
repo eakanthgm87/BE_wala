@@ -1,0 +1,256 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+
+<!-- ============================
+     BACKGROUND SLIDESHOW
+============================ -->
+<div class="bg-slideshow">
+    <div class="bg-dim"></div>
+</div>
+
+<style>
+    /* FORCE NAVBAR TO STAY ON TOP OF SLIDESHOW */
+.nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999 !important;
+    backdrop-filter: blur(18px) !important;
+    background: rgba(255,255,255,0.40) !important;
+}
+
+/* Prevent content from sliding under the navbar */
+body {
+    padding-top: 90px !important;
+}
+
+/* ============================
+   BACKGROUND SLIDESHOW BASE
+============================ */
+.bg-slideshow {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+.bg-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1.8s ease-in-out;
+}
+.bg-slide.show {
+    opacity: 1;
+}
+.bg-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bg-dim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.35));
+    z-index: 2;
+}
+
+/* ============================
+   PAGE BASE
+============================ */
+body {
+    background: transparent !important;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding-top: 40px;
+    overflow-x: hidden;
+}
+.dark-mode body {
+    background: transparent !important;
+}
+
+/* ============================
+   PAGE TITLE
+============================ */
+.up-title {
+    text-align: center;
+    font-size: 42px;
+    color: #0f5c2d;
+    font-weight: 800;
+    margin-bottom: 18px;
+    animation: fadeIn 0.9s ease;
+    position: relative;
+    z-index: 5;
+}
+.dark-mode .up-title {
+    color: #d0ffe1 !important;
+}
+
+/* ============================
+   UPLOAD BUTTON
+============================ */
+.upload-btn {
+    display: block;
+    width: 280px;
+    margin: 0 auto 30px auto;
+    padding: 15px 18px;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(135deg, #2e7d32, #1b5e20);
+    border-radius: 18px;
+    text-decoration: none;
+    box-shadow: 0 12px 28px rgba(0, 80, 30, 0.35);
+    transition: 0.25s;
+    position: relative;
+    z-index: 5;
+}
+.upload-btn:hover {
+    transform: translateY(-4px);
+}
+.dark-mode .upload-btn {
+    background: linear-gradient(135deg, #29762e, #154c21);
+    color: #d8ffe9 !important;
+}
+
+/* ============================
+   LIST CONTAINER (GLASS)
+============================ */
+.up-list {
+    width: 94%;
+    max-width: 900px;
+    margin: auto;
+    background: rgba(255,255,255,0.55);
+    backdrop-filter: blur(16px);
+    border-radius: 25px;
+    padding: 35px 30px;
+    box-shadow: 0 18px 45px rgba(0,0,0,0.18);
+    animation: fadeInUp 1s ease;
+    position: relative;
+    z-index: 5;
+}
+.dark-mode .up-list {
+    background: rgba(25,25,25,0.55) !important;
+}
+
+/* ============================
+   ITEM CARD
+============================ */
+.up-item {
+    padding: 20px 18px;
+    margin-bottom: 16px;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(10px);
+    border-radius: 18px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #134f2a;
+    box-shadow: 0 10px 22px rgba(0,80,30,0.2);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.up-item:hover {
+    transform: translateY(-5px);
+}
+.dark-mode .up-item {
+    background: rgba(35,35,35,0.75);
+    color: #d8ffe9;
+}
+
+/* ============================
+   ANIMATIONS
+============================ */
+@keyframes fadeIn {
+    from { opacity:0; transform: translateY(-10px); }
+    to   { opacity:1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+    from { opacity:0; transform: translateY(35px); }
+    to   { opacity:1; transform: translateY(0); }
+}
+</style>
+
+<h2 class="up-title">🌾 {% trans "Upcoming Crops" %}</h2>
+
+<a href="/upcoming/create/" class="upload-btn">
+    + {% trans "Upload Upcoming Crop" %}
+</a>
+
+<div class="up-list">
+
+{% for u in items %}
+    <div class="up-item">
+        🌱 <strong>{{ u.crop.name }}</strong><br>
+        {% trans "Ready by" %}: <strong>{{ u.expected_ready_date }}</strong><br>
+        👨‍🌾 {% trans "Farmer" %}: {{ u.seller.username }}
+    </div>
+{% empty %}
+    <div class="up-item" style="text-align:center;">
+        {% trans "No upcoming crops." %}
+    </div>
+{% endfor %}
+
+</div>
+
+<!-- ============================
+     BACKGROUND SLIDESHOW SCRIPT
+============================ -->
+<script>
+const IMAGES = [
+    "https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?w=1900&q=90",
+    "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=1900&q=90",
+    "https://images.unsplash.com/photo-1615485290414-9a97f661f16b?w=1900&q=90",
+    "https://images.unsplash.com/photo-1604908177000-60a1e0f397d5?w=1900&q=90",
+    "https://images.unsplash.com/photo-1582515073490-dc88d48e6936?w=1900&q=90",
+    "https://images.unsplash.com/photo-1506806732259-39c2d0268443?w=1900&q=90",
+    "https://images.unsplash.com/photo-1587202372775-98909d002450?w=1900&q=90",
+    "https://images.unsplash.com/photo-1579778318442-97197f9d21fc?w=1900&q=90",
+    "https://images.unsplash.com/photo-1604908553727-1219777084ff?w=1900&q=90",
+    "https://images.unsplash.com/photo-1586201375754-281ba6a5b0c7?w=1900&q=90",
+    "https://images.unsplash.com/photo-1560807707-8cc77767d783?w=1900&q=90",
+    "https://images.unsplash.com/photo-1615485259365-e9513c2b7466?w=1900&q=90",
+    "https://images.unsplash.com/photo-1610465299993-1e4b5c7e0a56?w=1900&q=90",
+    "https://images.unsplash.com/photo-1601314167099-d3646d3a7d9a?w=1900&q=90",
+    "https://images.unsplash.com/photo-1524592784654-032fefc9c3c5?w=1900&q=90",
+    "https://images.unsplash.com/photo-1636033838181-eb4a4cb1124c?w=1900&q=90",
+    "https://images.unsplash.com/photo-1587049352849-4f7fc8f43e69?w=1900&q=90",
+    "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=1900&q=90",
+    "https://images.unsplash.com/photo-1578428910478-df6f8c97adb3?w=1900&q=90",
+    "https://images.unsplash.com/photo-1563565375-c8f9d64cde05?w=1900&q=90"
+];
+
+(function startSlideshow() {
+    const container = document.querySelector(".bg-slideshow");
+
+    container.innerHTML = '<div class="bg-dim"></div>';
+
+    IMAGES.forEach(src => {
+        let slide = document.createElement("div");
+        slide.className = "bg-slide";
+
+        let img = document.createElement("img");
+        img.src = src;
+
+        slide.appendChild(img);
+        container.appendChild(slide);
+    });
+
+    const slides = document.querySelectorAll(".bg-slide");
+    let current = 0;
+
+    slides[0].querySelector("img").addEventListener("load", () => {
+        slides[0].classList.add("show");
+    });
+
+    setInterval(() => {
+        slides[current].classList.remove("show");
+        current = (current + 1) % slides.length;
+        slides[current].classList.add("show");
+    }, 10000);
+
+})();
+</script>
+
+{% endblock %}

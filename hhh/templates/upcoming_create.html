@@ -1,0 +1,280 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+
+<!-- ============================
+     BACKGROUND SLIDESHOW
+============================ -->
+<div class="bg-slideshow">
+    <div class="bg-dim"></div>
+</div>
+
+<style>
+    /* FORCE NAVBAR TO STAY ON TOP OF SLIDESHOW */
+.nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999 !important;
+    backdrop-filter: blur(18px) !important;
+    background: rgba(255,255,255,0.40) !important;
+}
+
+/* Prevent content from sliding under the navbar */
+body {
+    padding-top: 90px !important;
+}
+
+/* ============================
+   BACKGROUND SLIDESHOW CONFIG
+============================ */
+.bg-slideshow {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+.bg-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1.8s ease-in-out;
+}
+.bg-slide.show {
+    opacity: 1;
+}
+.bg-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bg-dim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.35));
+    z-index: 2;
+}
+
+/* ============================
+   PAGE BASE
+============================ */
+body {
+    background: transparent !important;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding-top: 40px;
+}
+.dark-mode body {
+    background: transparent !important;
+}
+
+/* ============================
+   TITLE
+============================ */
+h2 {
+    text-align: center;
+    font-size: 42px;
+    color: #1a5e20;
+    font-weight: 800;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 5;
+    animation: fadeIn .8s ease;
+}
+.dark-mode h2 {
+    color: #d8ffe9 !important;
+}
+
+/* ============================
+   FORM CONTAINER
+============================ */
+.form-box {
+    width: 95%;
+    max-width: 650px;
+    margin: auto;
+
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(18px);
+    border-radius: 26px;
+
+    padding: 40px;
+    position: relative;
+    z-index: 5;
+
+    box-shadow:
+        0 22px 48px rgba(0,0,0,0.25),
+        inset 2px 2px 6px rgba(255,255,255,0.5),
+        inset -2px -2px 6px rgba(0,0,0,0.08);
+
+    animation: fadeInUp 1s ease;
+}
+
+.dark-mode .form-box {
+    background: rgba(25,25,25,0.55) !important;
+    box-shadow:
+        0 22px 48px rgba(0,0,0,0.45),
+        inset 2px 2px 4px rgba(255,255,255,0.1),
+        inset -2px -2px 4px rgba(0,0,0,0.4) !important;
+}
+
+/* ============================
+   FORM ELEMENTS
+============================ */
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #1a5e20;
+}
+.dark-mode label {
+    color: #d8ffe9 !important;
+}
+
+textarea, input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 16px;
+    border: none;
+
+    background: rgba(255,255,255,0.9);
+    color: #1f4d26;
+    font-size: 16px;
+    margin-bottom: 28px;
+
+    box-shadow:
+        inset 2px 2px 5px rgba(0,0,0,0.12),
+        inset -2px -2px 6px rgba(255,255,255,0.7);
+
+    transition: 0.25s ease;
+}
+textarea {
+    height: 140px;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+    transform: scale(1.02);
+    box-shadow:
+        inset 2px 2px 10px rgba(0,0,0,0.2),
+        inset -2px -2px 10px rgba(255,255,255,1);
+}
+
+.dark-mode textarea,
+.dark-mode input {
+    background: rgba(35,35,35,0.9) !important;
+    color: #d8ffe9 !important;
+    border: none !important;
+}
+
+/* ============================
+   SAVE BUTTON
+============================ */
+.save-btn {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 16px;
+
+    background: linear-gradient(135deg, #2e7d32, #1b5e20);
+    color: white;
+
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+
+    box-shadow: 0 10px 28px rgba(0,80,30,0.35);
+    transition: 0.28s ease;
+}
+
+.save-btn:hover {
+    transform: translateY(-3px);
+}
+
+.dark-mode .save-btn {
+    background: linear-gradient(135deg, #215f27, #14471c);
+}
+
+/* ============================
+   ANIMATIONS
+============================ */
+@keyframes fadeIn {
+    from { opacity:0; transform: translateY(-10px); }
+    to   { opacity:1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+    from { opacity:0; transform: translateY(40px); }
+    to   { opacity:1; transform: translateY(0); }
+}
+</style>
+
+<h2>🌾 {% trans "Add Upcoming Crop" %}</h2>
+
+<div class="form-box">
+<form method="post">
+    {% csrf_token %}
+
+    <label>{% trans "Description about crop" %}:</label>
+    {{ form.description }}
+
+    <label>{% trans "Expected ready date" %}:</label>
+    {{ form.expected_ready_date }}
+
+    <button class="save-btn">{% trans "Save Crop" %}</button>
+</form>
+</div>
+
+<!-- ============================
+     BACKGROUND SLIDESHOW SCRIPT
+============================ -->
+<script>
+const IMAGES = [
+    "https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?w=1900&q=90",
+    "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=1900&q=90",
+    "https://images.unsplash.com/photo-1615485290414-9a97f661f16b?w=1900&q=90",
+    "https://images.unsplash.com/photo-1604908177000-60a1e0f397d5?w=1900&q=90",
+    "https://images.unsplash.com/photo-1582515073490-dc88d48e6936?w=1900&q=90",
+    "https://images.unsplash.com/photo-1506806732259-39c2d0268443?w=1900&q=90",
+    "https://images.unsplash.com/photo-1587202372775-98909d002450?w=1900&q=90",
+    "https://images.unsplash.com/photo-1579778318442-97197f9d21fc?w=1900&q=90",
+    "https://images.unsplash.com/photo-1604908553727-1219777084ff?w=1900&q=90",
+    "https://images.unsplash.com/photo-1586201375754-281ba6a5b0c7?w=1900&q=90",
+    "https://images.unsplash.com/photo-1560807707-8cc77767d783?w=1900&q=90",
+    "https://images.unsplash.com/photo-1615485259365-e9513c2b7466?w=1900&q=90",
+    "https://images.unsplash.com/photo-1610465299993-1e4b5c7e0a56?w=1900&q=90",
+    "https://images.unsplash.com/photo-1601314167099-d3646d3a7d9a?w=1900&q=90",
+    "https://images.unsplash.com/photo-1524592784654-032fefc9c3c5?w=1900&q=90"
+];
+
+(function startSlideshow() {
+    const container = document.querySelector(".bg-slideshow");
+    container.innerHTML = '<div class="bg-dim"></div>';
+
+    IMAGES.forEach(src => {
+        let slide = document.createElement("div");
+        slide.className = "bg-slide";
+        let img = document.createElement("img");
+        img.src = src;
+        slide.appendChild(img);
+        container.appendChild(slide);
+    });
+
+    const slides = document.querySelectorAll(".bg-slide");
+    let current = 0;
+
+    slides[0].querySelector("img").addEventListener("load", () => {
+        slides[0].classList.add("show");
+    });
+
+    setInterval(() => {
+        slides[current].classList.remove("show");
+        current = (current + 1) % slides.length;
+        slides[current].classList.add("show");
+    }, 10000);
+
+})();
+</script>
+
+{% endblock %}

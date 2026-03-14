@@ -8,3 +8,8 @@ All other commands work exactly as before
 
 
 
+Repo Intelligence
+Command:
+ai repo analyze
+AI outputs:
+Project Analysis

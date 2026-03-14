@@ -164,26 +164,3 @@ class SnapshotCommands:
         """Get current timestamp string."""
         from datetime import datetime
         return datetime.now().strftime("%H%M%S")
-
-
-def handle_snapshot_query(query: str) -> str:
-    """Handle an `ai: snapshot ...` query string.
-
-    Returns:
-        - A response string when the query is a snapshot command.
-        - None when the query is not a snapshot command.
-    """
-
-    query = query.strip()
-    if not query.startswith("snapshot"):
-        return None
-
-    parts = query.split()
-    if len(parts) < 2:
-        return "Usage: ai: snapshot <command> [args]"
-
-    subcommand = parts[1]
-    args = parts[2:]
-
-    cmd_handler = SnapshotCommands()
-    return cmd_handler.handle_command(subcommand, args)

@@ -5,6 +5,7 @@ from core.executor import run_command
 from ai.ai_engine import ask_ai
 from context.detector import detect_context
 from core.os_detect import get_os
+from core.process_manager import handle_project_command
 from safety.danger_detector import check_dangerous_command
 from healing.error_agent import error_agent
 from healing.file_ops import create_folder, create_file
@@ -14,15 +15,30 @@ from safety.file_analyzer import analyze_file
 from safety.folder_analyzer import analyze_folder
 from repo.push_to_repo import push_to_repo
 
+# Import Time Machine
+from timemachine import (
+    time_travel, show_timeline, whats_if, add_thought, record_moment,
+    show_file_history, compare_files, restore_file, track_file_changes
+)
+from timemachine.core import get_timemachine
+
+# Initialize Time Machine and start file watcher
+tm = get_timemachine()
+
+
+def run_with_record(command):
+    """Run command and record it in time machine"""
+    output = run_command(command)
+    record_moment(command, output)
+    return output
+
+
 ghost = GhostSuggest()
 
 
 def start_terminal():
-
     while True:
-
         try:
-
             user_input = prompt(
                 f"{os.getcwd()} > ",
                 auto_suggest=ghost
@@ -40,28 +56,68 @@ def start_terminal():
                     continue
 
             if user_input.lower() == "exit":
-                print("Exiting ShellMind...")
+                print("Exiting Matrix terminal...")
                 break
+
+            # =====================================================
+            # TIME MACHINE COMMANDS (NO COLON NEEDED)
+            # =====================================================
+            if user_input.lower().startswith("ai:travel to "):
+                query = user_input[13:].strip()
+                result = time_travel(query)
+                print(result)
+                continue
+
+            if user_input.lower() == "ai:timeline":
+                result = show_timeline()
+                print(result)
+                continue
+
+            if user_input.lower().startswith("ai:what if "):
+                query = user_input[11:].strip()
+                result = whats_if(query)
+                print(result)
+                continue
+
+            if user_input.lower().startswith("ai:think "):
+                query = user_input[9:].strip()
+                result = add_thought(query)
+                print(result)
+                continue
+
+            if user_input.lower() == "ai:watch":
+                from timemachine.monitor import start_monitor
+                start_monitor()
+                continue
+
+            if user_input.lower().startswith("ai:file history "):
+                query = user_input[16:].strip()
+                result = show_file_history(query)
+                print(result)
+                continue
 
             # =====================================================
             # AI MODE
             # =====================================================
-
             if user_input.lower().startswith("ai:"):
-
                 query = user_input[3:].strip().lower()
 
                 # ----------------------------------------------
                 # AI CHAT MODE
                 # ----------------------------------------------
+                if query.startswith("process"):
+                    parts = query.split()
+                    args = parts[1:] if len(parts) > 1 else []
+                    result = handle_project_command(args)
+                    if result:
+                        print(result)
+                    continue
 
                 if query == "chat":
-
                     print("\n🤖 ShellMind AI Chat Mode")
                     print("Type 'exit' to leave chat.\n")
 
                     while True:
-
                         user_msg = input("You > ")
 
                         if user_msg.lower() in ["exit", "quit"]:
@@ -76,7 +132,6 @@ def start_terminal():
                         if not ai_response:
                             print("⚠️ AI could not generate a response.")
                         else:
-
                             if ai_response.startswith("echo"):
                                 ai_response = ai_response.replace("echo", "").strip().strip('"')
 
@@ -85,43 +140,34 @@ def start_terminal():
                             print("══════════════════════════════")
                             print(ai_response)
                             print("══════════════════════════════\n")
-
                     continue
 
                 # ----------------------------------------------
                 # HELP
                 # ----------------------------------------------
-
                 if query == "help":
-
                     print("""
-ShellMind AI Commands
-
-Project Analysis
-----------------
-ai: scan project
-ai: show errors
+Matrix AI commands
+ai:natural language commands
+ai:timeline
+ai:deploy
+ai: chat
+Ai command corrections and Ai command auto completion
+Admin rmdir <folder>
+AI folder analyzer while normal deleting
+ai:process list
+ai:snapshot create/revert/ name <snapshot_name>
+ai:search <query>
 ai: explain errors
-ai: fix errors
-ai: fix file <path>
-ai: clear errors
-
-File Operations
----------------
 ai: create folder
 ai: create file
-ai: pushtorepo
 
-Chat
-----
-ai: chat
 """)
                     continue
 
                 # ----------------------------------------------
                 # ERROR AGENT
                 # ----------------------------------------------
-
                 if query == "scan project":
                     print(error_agent.cmd_scan(os.getcwd()))
                     continue
@@ -139,15 +185,11 @@ ai: chat
                     continue
 
                 if query.startswith("fix file"):
-
                     parts = query.split(" ", 2)
-
                     if len(parts) < 3:
                         print("Usage: ai: fix file <path>")
                         continue
-
                     filepath = parts[2]
-
                     print(error_agent.cmd_fix_file(filepath, os.getcwd()))
                     continue
 
@@ -158,27 +200,20 @@ ai: chat
                 # ----------------------------------------------
                 # FILE OPS
                 # ----------------------------------------------
-
                 if query == "create folder":
-
                     name = prompt("Enter folder name: ").strip()
-
                     if not name:
                         print("Folder name cannot be empty.")
                         continue
-
                     create_folder(name)
                     print(f"✔ Folder '{name}' created.")
                     continue
 
                 if query == "create file":
-
                     name = prompt("Enter file name: ").strip()
-
                     if not name:
                         print("File name cannot be empty.")
                         continue
-
                     create_file(name)
                     print(f"✔ File '{name}' created.")
                     continue
@@ -188,7 +223,6 @@ ai: chat
                 # ----------------------------------------------
                 if query.startswith("search ") or query == "search":
                     from search.agent import ai_search
-
                     response = ai_search(query, base_path=os.getcwd())
                     print(response)
                     continue
@@ -198,7 +232,6 @@ ai: chat
                 # ----------------------------------------------
                 if query.startswith("snapshot "):
                     from snapshot.commands import handle_snapshot_query
-
                     result = handle_snapshot_query(query)
                     if result is not None:
                         print(result)
@@ -212,9 +245,24 @@ ai: chat
                     continue
 
                 # ----------------------------------------------
+                # NATURAL COMMAND PARSING (deploy, etc.)
+                # ----------------------------------------------
+                print(f"DEBUG: About to call handle_command for query='{query}'")
+                try:
+                    from core.command_handler import handle_command
+                    result = handle_command(user_input)
+                    print(f"DEBUG: handle_command returned: {repr(result)}")
+                    if result and result != "__CHAT_MODE__":
+                        print(result)
+                        continue
+                except Exception as e:
+                    print(f"DEBUG: Exception in handle_command: {e}")
+                    import traceback
+                    traceback.print_exc()
+
+                # ----------------------------------------------
                 # AI COMMAND GENERATION
                 # ----------------------------------------------
-
                 context = detect_context()
                 os_type = get_os()
 
@@ -232,17 +280,14 @@ ai: chat
 
                 if risk == "HIGH":
                     print("⚠ Warning: This command may be dangerous.")
-
                 continue
 
             # =====================================================
             # NORMAL TERMINAL COMMANDS
             # =====================================================
-
             parts = user_input.split()
 
             if parts and parts[0].lower() == "admin":
-
                 if len(parts) < 3:
                     print("Usage: admin del <file> OR admin rmdir <folder>")
                     continue
@@ -251,33 +296,26 @@ ai: chat
                 target = parts[2]
 
                 if action in ["del", "delete"]:
-
                     if not os.path.exists(target):
                         print("❌ File does not exist.")
                         continue
 
                     analyze_file(target)
-
                     os.remove(target)
-
                     print(f"✔ File '{target}' deleted.")
                     continue
 
                 if action == "rmdir":
-
                     if not os.path.exists(target):
                         print("❌ Folder does not exist.")
                         continue
 
                     analyze_folder(target)
-
                     os.rmdir(target)
-
                     print(f"✔ Folder '{target}' deleted.")
                     continue
 
             run_command(user_input)
-
             ghost.update_last_command(user_input)
 
         except KeyboardInterrupt:

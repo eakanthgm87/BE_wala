@@ -1,0 +1,158 @@
+{% extends "base_plain.html" %}
+{% load i18n %}
+{% block content %}
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        font-family: "Inter", "Poppins", sans-serif;
+
+        /* 🌄 Background Image Added Here */
+        background: 
+            linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.65)),
+            url("https://t3.ftcdn.net/jpg/10/18/41/42/360_F_1018414204_slajqwEJK41TZ9N7c9V55N8jgu0jnNJB.jpg");
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .login-wrapper {
+        width: 440px;
+        background: rgba(255,255,255,0.82);
+        border-radius: 26px;
+        padding: 42px 38px;
+        backdrop-filter: blur(12px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+        animation: fadeIn 0.9s ease-out;
+    }
+
+    .title {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 6px;
+        color: #1a3d2f;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: #4c6b58;
+        margin-bottom: 28px;
+        font-size: 15px;
+    }
+
+    .input-box {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-size: 14px;
+        color: #345542;
+        font-weight: 600;
+    }
+
+    input {
+        width: 100%;
+        margin-top: 6px;
+        padding: 15px;
+        border-radius: 14px;
+        border: 1px solid #d9e6d8;
+        background: #ffffff;
+        font-size: 16px;
+        color: #0a0a0a;
+        transition: 0.25s;
+    }
+
+    input::placeholder {
+        color: rgba(0,0,0,0.45);
+    }
+
+    input:focus {
+        background: #ffffff;
+        border-color: #6abf7b;
+        box-shadow: 0 0 0 3px rgba(106,191,123,0.25);
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+        border-radius: 14px;
+        border: none;
+        font-size: 17px;
+        font-weight: 600;
+        background: #1b5e20;
+        color: white;
+        cursor: pointer;
+        transition: 0.25s ease;
+        box-shadow: 0 6px 16px rgba(0,90,40,0.18);
+    }
+
+    button:hover {
+        background: #164d1a;
+        transform: translateY(-2px);
+    }
+
+    .footer-text {
+        text-align: center;
+        color: #4b6350;
+        margin-top: 18px;
+        font-size: 14px;
+    }
+
+    .footer-text a {
+        color: #164d1a;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .footer-text a:hover {
+        text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+
+<div class="login-wrapper">
+
+    <div class="title">Welcome Back</div>
+    <div class="subtitle">Access your Farmer Dashboard</div>
+
+    {% if error %}
+        <p style="color: red; text-align:center; font-weight:600; margin-bottom: 10px;">{{ error }}</p>
+    {% endif %}
+
+    <form method="post">
+        {% csrf_token %}
+
+        <div class="input-box">
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Enter username" required>
+        </div>
+
+        <div class="input-box">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter password" required>
+        </div>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <p class="footer-text">
+        Don't have an account?
+        <a href="/signup/">Create one</a>
+    </p>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<h1>{% trans "FarmLink Exchange" %}</h1>
+
+<p>{% trans "Total Farmers Registered" %}: {{ users_count }}</p>
+
+{% if not user.is_authenticated %}
+    <p>
+        <a href="/login/">{% trans "Login" %}</a>
+        {% trans "or" %}
+        <a href="/signup/">{% trans "Create Account" %}</a>
+    </p>
+{% else %}
+    <p>
+        <a href="/dashboard/">{% trans "Go to Dashboard" %}</a>
+    </p>
+{% endif %}
+
+{% endblock %}

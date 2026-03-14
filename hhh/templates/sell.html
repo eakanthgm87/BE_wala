@@ -1,0 +1,246 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+
+<style>
+/* Remove base backgrounds */
+body, main, .content, .wrapper {
+    background: transparent !important;
+}
+
+/* ======================================================
+   BACKGROUND SLIDESHOW
+====================================================== */
+
+/* Preloaded FIRST background image — INSTANT LOAD */
+.bg-slideshow {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+
+    /* 🔥 FIRST IMAGE SHOWS IMMEDIATELY */
+    background: url("https://images.unsplash.com/photo-1518976024611-4881f09edcde?auto=format&fit=crop&w=2000&q=80")
+                center/cover no-repeat fixed;
+}
+
+.bg-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1.3s ease-in-out;
+}
+
+.bg-slide.show {
+    opacity: 1;
+}
+
+.bg-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Dim overlay */
+.bg-dim {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: rgba(0,0,0,0.22);
+}
+
+/* ======================================================
+   REMOVE GLOSSY LAYER
+====================================================== */
+.glass-cover {
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    background: transparent !important;
+    backdrop-filter: none !important;
+}
+
+/* ======================================================
+   TITLE
+====================================================== */
+.hero-title {
+    position: relative;
+    z-index: 5;
+    margin-top: 160px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 6px 30px rgba(0,0,0,0.5);
+}
+
+/* ======================================================
+   GLASS SELL FORM CARD
+====================================================== */
+.glass-card {
+    position: relative;
+    z-index: 5;
+    width: 92%;
+    max-width: 780px;
+    margin: 40px auto 80px;
+    padding: 48px;
+
+    background: rgba(255,255,255,0.65);
+    backdrop-filter: blur(15px);
+    border-radius: 26px;
+
+    box-shadow:
+        0 18px 45px rgba(0,0,0,0.25),
+        inset 0 1px 3px rgba(255,255,255,0.45),
+        inset 0 -1px 3px rgba(0,0,0,0.08);
+}
+
+/* Inputs --------------------------------------------------------- */
+form label {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    display: block;
+    color: #0f3d26;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 16px;
+    border: none;
+    background: rgba(255,255,255,0.88);
+    font-size: 15px;
+
+    box-shadow:
+        inset 2px 2px 6px rgba(0,0,0,0.1),
+        inset -2px -2px 6px rgba(255,255,255,0.5);
+
+    transition: 0.25s;
+}
+
+form textarea {
+    min-height: 140px;
+}
+
+form input:focus,
+form textarea:focus {
+    background: #fff;
+    outline: none;
+    box-shadow:
+        0 0 0 6px rgba(0,0,0,0.05),
+        inset 2px 2px 6px rgba(0,0,0,0.12);
+}
+
+/* Button --------------------------------------------------------- */
+.submit-btn {
+    margin-top: 30px;
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #1b5e20, #0b3a17);
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.22);
+    transition: 0.25s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-4px);
+}
+</style>
+
+<!-- Background -->
+<div class="bg-slideshow">
+    <div class="bg-dim"></div>
+</div>
+
+<div class="glass-cover"></div>
+
+<!-- TITLE -->
+<div class="hero-title">
+    {% trans "Sell Your Crop" %}
+</div>
+
+<!-- FORM -->
+<div class="glass-card">
+    <form id="sellForm" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <label>{% trans "Crop Name" %}</label>
+        <input name="crop_name" required>
+
+        <label>{% trans "Crop Description" %}</label>
+        <textarea name="crop_description" required></textarea>
+
+        <label>{% trans "Price per unit (₹)" %}</label>
+        <input name="price_per_unit" type="number" required>
+
+        <label>{% trans "Base Price (₹)" %}</label>
+        <input name="base_price" type="number" required>
+
+        <label>{% trans "Details" %}</label>
+        <textarea name="details"></textarea>
+
+        <label>{% trans "Terms" %}</label>
+        <textarea name="terms"></textarea>
+
+        <label>{% trans "Upload Images" %}</label>
+        <input name="images" type="file" multiple>
+
+        <button class="submit-btn" type="submit">
+            {% trans "Create Listing" %}
+        </button>
+    </form>
+</div>
+
+<!-- ======================================================
+     JS: SPEED-OPTIMIZED SLIDESHOW
+====================================================== -->
+<script>
+/* Remaining background images */
+const IMAGES = [
+    "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2",
+    "https://images.unsplash.com/photo-1471193945509-9ad0617afabf",
+    "https://images.unsplash.com/photo-1587049352836-1950e4e62b38",
+    "https://images.unsplash.com/photo-1506806732259-39c2d0268443",
+    "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "https://images.unsplash.com/photo-1499529112087-3cb3b73cec95",
+    "https://images.unsplash.com/photo-1504595403659-9088ce801e29"
+];
+
+/* No delay, first background already visible */
+(function startSlideshow() {
+    const container = document.querySelector(".bg-slideshow");
+
+    IMAGES.forEach(url => {
+        const slide = document.createElement("div");
+        slide.className = "bg-slide";
+
+        const img = document.createElement("img");
+        img.src = url + "?auto=format&fit=crop&w=2000&q=80";
+
+        slide.appendChild(img);
+        container.appendChild(slide);
+    });
+
+    const slides = container.querySelectorAll(".bg-slide");
+    let index = 0;
+
+    slides[0].classList.add("show");
+
+    setInterval(() => {
+        slides[index].classList.remove("show");
+        index = (index + 1) % slides.length;
+        slides[index].classList.add("show");
+    }, 10000);
+})();
+</script>
+
+{% endblock %}

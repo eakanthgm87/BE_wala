@@ -1,4 +1,3 @@
-import base64
 import os
 import psutil
 import subprocess
@@ -169,8 +168,6 @@ class SnapshotManager:
                     is_binary = self._is_binary_file(filepath)
 
                     content = None
-                    binary_content = None
-
                     if not is_binary:
                         try:
                             with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
@@ -178,18 +175,9 @@ class SnapshotManager:
                         except:
                             is_binary = True
 
-                    if is_binary:
-                        try:
-                            with open(filepath, 'rb') as f:
-                                raw = f.read()
-                                binary_content = base64.b64encode(raw).decode('utf-8')
-                        except:
-                            binary_content = None
-
                     files.append(FileSnapshot(
                         path=str(rel_path),
                         content=content,
-                        binary_content=binary_content,
                         size=size,
                         mtime=stat.st_mtime,
                         is_binary=is_binary
@@ -371,18 +359,10 @@ class SnapshotManager:
             # Create directory if needed
             filepath.parent.mkdir(parents=True, exist_ok=True)
 
-            # Restore file content (text or binary)
+            # Restore file content
             if file_snapshot.content is not None:
-                with open(filepath, 'w', encoding='utf-8', errors='ignore') as f:
+                with open(filepath, 'w', encoding='utf-8') as f:
                     f.write(file_snapshot.content)
-            elif file_snapshot.binary_content:
-                try:
-                    data = base64.b64decode(file_snapshot.binary_content)
-                    with open(filepath, 'wb') as f:
-                        f.write(data)
-                except Exception:
-                    # Fallback: create empty file
-                    filepath.touch()
             elif not file_snapshot.is_binary:
                 # Create empty file
                 filepath.touch()
